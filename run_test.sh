@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Running Flask Unit Tests"
-python index_test.py
+python3 index_test.py
