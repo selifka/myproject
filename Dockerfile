@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     python3-setuptools \
     python3-pip \
-    pip3 install --upgrade pip \
     pip3 install Flask==0.12 \
     pip3 install prometheus_client
 
