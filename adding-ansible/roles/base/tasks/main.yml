@@ -9,8 +9,8 @@
 
 - name: copy the apache configuration
   copy:
-    src: flask-helloworld.conf
-    dest: /etc/httpd/conf.d/flask-helloworld.conf
+    src: flask-index.conf
+    dest: /etc/httpd/conf.d/flask-index.conf
     owner: apache
     group: root
     mode: 655

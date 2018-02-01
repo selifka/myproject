@@ -1,0 +1,47 @@
+#section1 {
+	background-color: #898D90;
+	color: #555555;
+	padding-top: 200px;
+	height:800px;
+}
+
+#aboutme {
+	background-color: #ffffff; /* was 1abc9c */
+	color: #222222;
+	padding-top: 300px;
+	height:800px;
+}
+
+#resume {
+	background-color: #474e5d; 
+	color: #ffffff;
+	padding-top: 300px;
+	height:800px;
+}
+
+#project {
+	background-color: #ffffff; 
+	color: #555555;
+	padding-top: 300px;
+	height:800px;
+}
+
+#contactme {
+	background-color: #474e5d; 
+	color: #ffffff;
+	padding-top: 300px;
+	height:800px;	 
+}
+
+footer {
+	padding: 4em;
+	color: white;
+	background-color: #222222;
+	text-align: center;
+}
+
+.navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 15px;
+  }
