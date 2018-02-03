@@ -5,5 +5,10 @@ app = Flask(__name__)
 def index():
     return render_template('base.html')
 
+def before_request():
+    app.jinja_env.cache = {}
+
+app.before_request(before_request)
+
 if __name__ == '__main__':
-    APP.run(debug=True, host='0.0.0.0')
+    APP.run(host='0.0.0.0')
