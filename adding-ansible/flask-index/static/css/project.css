@@ -3,12 +3,12 @@ body{
 }
 
 h1 {
-	font-family: 'Open Sans', sans-serif !important; 
-	font-size: 80px !important;
+	font-family: 'Oswald', sans-serif !important;  
+	font-size: 60px !important;
 }
 
 h2{
-	font-family: 'Open Sans', sans-serif !important; 
+	font-family: 'Oswald', sans-serif !important; 
 	font-size: 60px !important;
 }
 
@@ -22,44 +22,55 @@ p {
 	font-size: 18px !important;
 }
 
-.navbar-project{
-	font-family: 'Open Sans', sans-serif !important;
-	padding-top: 1rem !important;
-  	padding-bottom: 1rem !important;
+.navbar-light {
+    font-family: 'Oswald', sans-serif !important; 
+	padding-top: 2rem !important;
+  	padding-bottom: 2em !important;
+  	letter-spacing: 4px !important;
   	text-transform: uppercase !important;
 }
 
-#section1 {
-	background-color: #ffffff; 
-	color: #555555;
+.navbar-light .navbar-brand{
+	color: #000 !important;
+}
+
+.navbar-light .navbar-nav > li > a {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-nav > li > a:hover,
+.navbar-light .navbar-nav > li > a:focus {
+    color: grey !important;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+  	color: grey !important;
+}
+
+.grey-container{
+	background: lightGray; 
 	padding-top: 300px;
 	height:800px;
 }
 
-#aboutme {
-	background-color: #ffffff; /* was 1abc9c */
-	color: #222222;
+.white-container{
+	background-color: #ffffff; 
 	padding-top: 300px;
 	height:800px;
+}
+
+.landing {
+	color: white;	
 }
 
 #experience {
-	background-color: #474e5d; 
-	color: #ffffff;
-	padding-top: 300px;
-	height:800px;
 }
 
 #project {
-	background-color: #898D90;
-	color: #ffffff;
-	padding-top: 300px;
-	height:800px;
 }
 
-#contactme {
-	background-color: #474e5d; 
-	color: #ffffff;
-	padding-top: 300px;
-	height:800px;	 
+#aboutme {
+}
+
+#contactme { 
 }
