@@ -1,134 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Required Meta tags -->
 
-    <!-- Project CSS -->
-    <link href="/static/css/project.css" rel="stylesheet">
-
-    <!-- Bootstrap 
-    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Icon in tab -->
+    <link rel="icon" href="/static/images/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="/static/css/project.css">
+	  <!-- Font-Awesome -->
+    <link rel="stylesheet" href="/static/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lekton|Open+Sans|Molengo|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lekton|Open+Sans" rel="stylesheet">
 
-    <title>Sharayah Corcoran</title>
-  </head>
+    <title>Sharayah</title>
+</head>
 
-  <body id="page-top">
+<body  id="page-top">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">S|C</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutme">Interests</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#contactme">Contact</a>
-          </li>
-        </ul>
+  <!-- Header and Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbarNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">S|C</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Start Main Content -->
-  <div class="container-fluid text-center grey-container landing">
-    <!--<img src="/static/images/me.jpg">-->
-          <h1>Hi, I'm Sharayah Corcoran</h1>
-          <h3>837 Route Missisquoi Bolton-Est, QC 603-943-1089 sba37@wildcats.unh.edu</h3>
-          <p>Professional summary</p>
-          <!-- links -->
-          <!--Linkedin-->
-          <a href="https://www.linkedin.com/in/sharayahcorcoran/"><i class="fab fa-linkedin-in fa-3x"></i></a>
-          <!--Github-->
-          <a href="https://github.com/selifka"><i class="fab fa-github fa-3x"></i></a>
-  </div> 
-
-  <!-- Experience -->
-  <div id="experience" class="container-fluid text-center white-container">
-      <h2>My Experience</h2>
-      <h3>Highlights: Python, Ansible, Docker, Git</h3>
-      <p>If you would like to learn more about me please download my resume!</p>
-      <a href="/static/resume/resumePlaceHolder.txt" download><button type="button" class="btn btn-info btn-lg">Resume</button></a>
+  <!-- Banner -->
+  <div class="banner bg-dark">
+      <div class="container text-center py-5">
+        <h1 class="display-3 text-white font-weight-bold">
+          Hi, I'm Sharayah
+        </h1>
+        <h3 class="text-white py-1">837 Route Missisquoi <i class="fa fa-circle" aria-hidden="true"></i> Bolton-Est, QC <i class="fa fa-circle" aria-hidden="true"></i>  
+          603-943-1089 <i class="fa fa-circle" aria-hidden="true"></i> sba37@wildcats.unh.edu
+        </h3>
+        <p class="text-white my-4">
+          I am an experienced Helpdesk Technician with a demonstrated history of troubleshooting, network, and computer repair. 
+          Recently I have focused on DevOps and have grown my skills using Docker,
+          Ansible, Python, AWS, and Linux operating systems.
+        </p>
+          <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 font-weight-bold atlas-cta cta-green">Linkedin</a>
+      </div>
+      <svg class="slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+         <polygon fill="white" points="0,100 100,0 100,100"/>
+      </svg>
   </div>
 
-  <!-- Project -->
-  <div id="project" class="container-fluid text-center grey-container">
-      <h2>Project</h2>
-      <h3> You can find all of my project notes by going to this link: </h3>
-      <p>Not quite sure what should go here, perhaps links to documentation and stuff for my project? Provide
-      a brief overview and a few key things I worked on.</p>
-      <a href="https://docs.google.com/document/d/10IA2wtL81kxU8lxMzI3U8LXRhYEtP6_7-2mmIPIEeuA/edit?usp=sharing"> <i class="fab fa-google-drive fa-4x"></i></a>
+  <!-- Experience -->
+  <div class="experience-sec" id="experience">
+    <div class="container py-5">
+      <h2 class="text-center font-weight-bold">My Experience</h2>
+      <div class="row">
+          <div class="col-md-4 text-center">
+              <img src="/static/images/smart-protect-1.jpg" class="mx-auto">
+              <h4>Python</h4>
+                <p>Lorem ipsum dolor sit amet porro his no his deleniti</p>
+          </div>
+          <div class="col-md-4 text-center">
+              <img src="/static/images/smart-protect-2.jpg" class="mx-auto">
+              <h4>Ansible</h4>
+                <p>Ne error antiopam usu. Sed vocen concludaturque ea</p>
+          </div>
+          <div class="col-md-4 text-center">
+              <img src="/static/images/smart-protect-3.jpg" class="mx-auto">
+              <h4>Docker</h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+          </div>
+      </div>
+    </div>
+    <svg class="exp-slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#D3D3D3" points="0,100 0,0 100,100"/>
+    </svg>
+  </div>
+
+  <!-- Resume -->
+  <div class="resume">
+    <div class="container py-5">
+        <div class="row justify-content-between text-center text-md-left">
+            <div class="col-md-6">
+                <h2 class="font-weight-bold">Download my Resume</h2>
+                  <p class="my-4"><p>If you would like to learn more about me please download my resume!
+                  <br> augue disputando in vim. Erat fugit sit at, ius lorem deserunt deterruisset no.</p>
+                <a href="/static/resume/resumePlaceHolder.txt" download class="btn my-4 font-weight-bold atlas-cta cta-blue">Download Resume</a>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="/static/images/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
+            </div>
+        </div>
+    </div>
   </div>
 
   <!-- About Me -->
-  <div id="aboutme" class="container-fluid text-center white-container">
-      <h2>About Me</h2>
-      <h3>I don't only have an interest in computing.</h3>
-      <p>I also love watching sci-fi and fantasy TV and movies, I am an avid cooker that eats only plants.
-      I enjoy traveling and going to events with friends. 
-      <br>I also exercise a lot and value nutrition, health and overall wellness.</p>
+  <div class="about" id="aboutme">
+    <div class="container py-5">
+        <div class="row justify-content-between text-center text-md-right">
+            <div class="col-md-6 align-self-center">
+                <img src="/static/images/me.jpg" class="mx-auto d-block rounded-circle">
+            </div>
+            <div class="col-md-6">
+                <h2 class="font-weight-bold">About Me</h2>
+                <p class="my-4">
+                    I also love watching sci-fi and fantasy TV and movies, I am an avid cooker that eats only plants.
+                    I enjoy traveling and going to events with friends. I also exercise a lot and value nutrition, health and overall wellness.
+                    <br> eum et oratio disputationi. Falli lobortis his ad
+                </p>
+                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <svg class="about-slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="white" points="0,100 100,0 100,100"/>
+    </svg>
+  </div>
+
+  <!-- Project Information -->
+  <div class="project" id="project">
+    <div class="container py-5" id="price-table">
+      <h2 class="text-center font-weight-bold">My Projects</h2>
+      <div class="row">
+          <div class="col-md-4 text-center py-4 mt-5">
+              <h4 class="my-4">STARTUP</h4>
+              <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p>
+              <ul class="list-unstyled">
+                  <li>Up to 5 Documents</li>
+                  <li>Up to 3 Reviews</li>
+                  <li>5 team Members</li>
+                  <li>Limited Support</li>
+              </ul>
+              <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
+          </div>
+          <div class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+              <h4 class="my-4">PREMIUM</h4>
+              <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p>
+              <ul class="list-unstyled">
+                  <li>Up to 15 Documents</li>
+                  <li>Up to 10 Reviews</li>
+                  <li>25 team Members</li>
+                  <li>Limited Support</li>
+              </ul>
+              <a href="https://github.com/selifka/" class="btn my-4 font-weight-bold atlas-cta cta-green">Github</a>
+          </div>
+          <div class="col-md-4 text-center py-4 mt-5">
+              <h4 class="my-4">PROFESSIONAL</h4>
+              <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p>
+              <ul class="list-unstyled">
+                  <li>Unlimited Documents</li>
+                  <li>Unlimited Reviews</li>
+                  <li>Unlimited Members</li>
+                  <li>Unlimited Support</li>
+              </ul>
+              <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
+          </div>
+      </div>
+    </div>
+    <svg class="project-slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="#192440" points="0,100 0,0 100,100"/>
+    </svg>
   </div>
 
   <!-- Contact Me -->
-  <div class="container-fluid grey-container" id="contactme">
-      <div class="text-center">
-        <h2>Contact Me</h2>
-        <h3>Either a contact form, link to email, phone links? Social media!</h3>
-      </div>
-    <form>
-      <div class="row ">
-        <div class="col-md-6 offset-md-3 form-group">
-            <input class="form-control" placeholder="Your Name">
+  <div id="contact">
+    <div class="container py-5">
+        <div class="row justify-content-between">
+            <div class="col-md-6 text-white">
+                <h2 class="font-weight-bold">Contact Me</h2>
+                <p class="my-4">
+                    Do you want to learn more about me, or just want to chat?
+                    <br>
+                    Feel free to use this form to send me a message! 
+                    <br>
+                    You can also contact me using my phone number or email address found below!
+                </p>
+                <ul class="list-unstyled">
+                    <li>Email : sba37@wildcats.unh.edu</li>
+                    <li>Phone : 603-943-1089</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <form>
+                	<div class="row">
+                      <div class="form-group col-md-6">
+                          <label for="name">Your Name</label>
+                          <input type="name" class="form-control" id="name">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="Email">Your Email</label>
+                          <input type="email" class="form-control" id="Email">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                    <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 form-group">
-            <input class="form-control" placeholder="Your Email Address">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 form-group">
-            <textarea class="form-control" placeholder="Your Message"></textarea>
-          </div>
-        </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-            <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
+
+	<!-- Footer -->
+	<div id="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Sharayah Corcoran &middot; 2018
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="https://github.com/selifka/" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharayah.corcoran" class="d-inline-block text-center ml-2">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="/static/vendor/jquery/jquery.min.js"></script>
     <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/static/vendor/scrollreveal/scrollreveal.min.js"></script>
-
     <!-- W3 Schools Scrollspy JS -->
     <script src="/static/js/project.js"></script>
+    
+</body>
 
-  </body>
 </html>
