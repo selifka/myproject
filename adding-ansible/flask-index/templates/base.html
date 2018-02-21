@@ -7,13 +7,14 @@
     <!-- Required Meta tags -->
 
     <!-- Icon in tab -->
-    <link rel="icon" href="/static/images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/static/images/title-image.jpg">
     <!-- custom.css -->
     <link rel="stylesheet" href="/static/css/project.css">
 	  <!-- Font-Awesome -->
     <link rel="stylesheet" href="/static/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lekton|Open+Sans" rel="stylesheet">
 
@@ -24,9 +25,9 @@
 
   <!-- Header and Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbarNav">
       <div class="container">
-        <a class="navbar-brand" href="#page-top">S|C</a>
+        <a class="navbar-left" href="#page-top"><img src="/static/images/logo.jpg" alt="logo"></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,23 +52,17 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner bg-dark">
+  <div class="banner" id="banner-image">
       <div class="container text-center py-5">
         <h1 class="display-3 text-white font-weight-bold">
           Hi, I'm Sharayah
         </h1>
-        <h3 class="text-white py-1">837 Route Missisquoi <i class="fa fa-circle bullets" aria-hidden="true"></i> Bolton-Est, QC <i class="fa fa-circle bullets" aria-hidden="true"></i>  
-          603-943-1089 <i class="fa fa-circle bullets" aria-hidden="true"></i> sba37@wildcats.unh.edu
+        <h3 class="text-white py-1">Entry Level DevOps and Front End Developer
         </h3>
-        <p class="text-white my-4">
-          Recent dean’s list graduate with demonstrated DevOps, web development, and technical
-          troubleshooting experience. Seeking opportunities that focus on automation,
-          containerization, and continuous development in a collaborative environment. 
-        </p>
-          <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 font-weight-bold atlas-cta cta-green">Linkedin</a>
+          <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 font-weight-bold custom-btn banner-btn">Linkedin</a>
       </div>
       <svg class="slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-         <polygon fill="white" points="0,100 100,0 100,100"/>
+         <polygon fill="#d9d9d9" points="0,100 100,0 100,100"/>
       </svg>
   </div>
 
@@ -75,52 +70,64 @@
   <div class="experience-sec" id="experience">
     <div class="container">
       <h2 class="text-center font-weight-bold">My Experience</h2>
-      <div class="row justify-content-between text-center text-md-left py-5">
-        <div class="col-md-6">
-            <h4>Remote Helpdesk Technician</h4>
-            <p>The Computer Guys | 2014-Present</p>
-            <p>Some information about the company
-            <br>
-            take up a few lines</p>
-        </div>
-        <div class="col-md-6 align-self-center">
-          <ul class="list-unstyled">
-              <li>Resolved majority of support tickets without escalation or call backs</li>
-              <li>Quickly assisted customers with computer problems including slowdowns, poor
-                  network connectivity, viruses, and application trouble
-              </li>
-              <li>Configured and managed Microsoft Exchange, DHCP, and IIS
-              </li>
-              <li>Diagnosed, troubleshot, and resolved a range of software, and network
-                  connectivity problems.
-              </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row justify-content-between text-center text-md-left">
-          <div class="col-md-6">
-              <h4>Information Technology Specialist</h4>
-              <p>US Army National Guard | 2010-2014</p>
-              <p>Some information about the company
-              <br>
-              take up a few lines</p>
-          </div>
-          <div class="col-md-6 align-self-center">
-              <ul class="list-unstyled">
-                <li>Network troubleshooting, configuration, setup, and repair experience</li>
-                <li>Configuration of Cisco Call Manager and TACLANE experience
-                </li>
-                <li>Trusted with sensitive Army computer information and held secret security
-                    clearance
-                </li>
-                <li>Installation and maintenance of LAN and WAN networks, and VoIP phones
-                </li>
-              </ul>
-          </div>
-      </div>
+      <hr>
+        <ul class="timeline timeline-centered">
+          <li class="timeline-item">
+            <div class="timeline-info">
+                <span>Date</span>
+            </div>
+            <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>The Computer Guys | 2014-Present</h4><h4>Remote Helpdesk Technician</h4>
+                <p>Some information about the company, take up a few lines Resolved majority of support tickets without escalation or call backsQuickly assisted customers with computer problems including slowdowns, poor
+                network connectivity, viruses, and application trouble
+                Configured and managed Microsoft Exchange, DHCP, and IIS
+                Diagnosed, troubleshot, and resolved a range of software, and network
+                connectivity problems.
+                </p>
+              </div>
+          </li>
+          <li class="timeline-item">
+              <div class="timeline-info">
+                <span>Date</span>
+              </div>
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>US Army National Guard | 2010-2014</h4><h4>Information Technology Specialist</h4>
+                <p>Network troubleshooting, configuration, setup, and repair experience
+                Configuration of Cisco Call Manager and TACLANE experience
+                Trusted with sensitive Army computer information and held secret security
+                clearance
+                Installation and maintenance of LAN and WAN networks, and VoIP phones
+                </p>
+            </div>
+          </li>
+          <li class="timeline-item period">
+            <div class="timeline-info"></div>
+              <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Education</h2>
+                </div>
+          </li>
+                    <li class="timeline-item">
+            <div class="timeline-info">
+                <span>Date</span>
+            </div>
+            <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>University of New Hampshire</h4><h4>Computer Information Systems</h4>
+                <p>Some information about the company, take up a few lines Resolved majority of support tickets without escalation or call backsQuickly assisted customers with computer problems including slowdowns, poor
+                network connectivity, viruses, and application trouble
+                Configured and managed Microsoft Exchange, DHCP, and IIS
+                Diagnosed, troubleshot, and resolved a range of software, and network
+                connectivity problems.
+                </p>
+              </div>
+          </li>
+        </ul>
     </div>
     <svg class="exp-slant" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <polygon fill="#D3D3D3" points="0,100 0,0 100,100"/>
+      <polygon fill="#e6e6e6" points="0,100 0,0 100,100"/>
     </svg>
   </div>
 
@@ -131,7 +138,7 @@
             <div class="col-md-6">
                 <h2 class="font-weight-bold">Download my Resume</h2>
                   <p class="my-4"><p>If you would like to learn more about me please download my resume!</p>
-                <a href="/static/resume/sharayah-resume.pdf" download class="btn my-4 font-weight-bold atlas-cta cta-blue">Download Resume</a>
+                <a href="/static/resume/sharayah-resume.pdf" download class="btn my-4 font-weight-bold custom-btn cta-blue">Download Resume</a>
             </div>
             <div class="col-md-6 align-self-center">
                 <img src="" class="mx-auto d-block">
@@ -152,8 +159,11 @@
                 <p class="my-4">
                     I also love watching sci-fi and fantasy TV and movies, I am an avid cooker that eats only plants.
                     I enjoy traveling and going to events with friends. I also exercise a lot and value nutrition, health and overall wellness.
+                    Recent dean’s list graduate with demonstrated DevOps, web development, and technical
+                    troubleshooting experience. Seeking opportunities that focus on automation,
+                    containerization, and continuous development in a collaborative environment. 
                 </p>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                <a href="#" class="btn my-4 font-weight-bold custom-btn cta-blue">Learn More</a>
             </div>
         </div>
     </div>
@@ -166,6 +176,7 @@
   <div class="project" id="project">
     <div class="container" id="price-table">
       <h2 class="text-center font-weight-bold">My Projects</h2>
+      <hr>
       <div class="row">
           <div class="col-md-4 text-center py-4 mt-5">
               <h4 class="my-4">STARTUP</h4>
@@ -207,58 +218,25 @@
 
   <!-- Contact Me -->
   <div id="contact">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-6 text-white">
+    <div class="container text-center">
+        <div class="">
+            <div class="text-white">
                 <h2 class="font-weight-bold">Contact Me</h2>
                 <p class="my-4">
-                    Do you want to learn more about me, or just want to chat?
+                    Feel free to reach out to me at:
                     <br>
-                    Feel free to use this form to send me a message! 
+                    sba37@wildcats.unh.edu
                     <br>
-                    You can also contact me using my phone number or email address found below!
+                    or
+                    <br>
+                    603-943-1089
                 </p>
-                <ul class="list-unstyled">
-                    <li>Email : sba37@wildcats.unh.edu</li>
-                    <li>Phone : 603-943-1089</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <form>
-                	<div class="row">
-                      <div class="form-group col-md-6">
-                          <label for="name">Your Name</label>
-                          <input type="name" class="form-control" id="name">
-                      </div>
-                      <div class="form-group col-md-6">
-                          <label for="Email">Your Email</label>
-                          <input type="email" class="form-control" id="Email">
-                      </div>
-                  </div>
-                  <div class="form-group">
-                      <label for="message">Message</label>
-                      <textarea class="form-control" id="message" rows="3"></textarea>
-                  </div>
-                    <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-  </div>
-
-	<!-- Footer -->
-	<div id="footer">
-        <div class="container">
-            <div class="row justify-content-between">
-            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
-                    Sharayah Corcoran &middot; 2018
-                </div>
-                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                <div id="social-media">
                     <a href="https://github.com/selifka/" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-github" aria-hidden="true"></i>
+                      <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.facebook.com/sharayah.corcoran" class="d-inline-block text-center ml-2">
                       <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -267,7 +245,7 @@
             </div>
         </div>
     </div>
-
+  </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="/static/vendor/jquery/jquery.min.js"></script>
