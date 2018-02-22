@@ -1,16 +1,11 @@
 /********** common setting **********/
 body, html {
     font-family: 'Open Sans', sans-serif !important;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    color: #656c6d;
-    width: 100% !important;
-    height: 100% !important;
+    color: #000000 !important;
 }
 
 h2 {
     line-height: 20px;
-    color: #121d1f;
     font-weight: 400;
     font-size: 34px;
 }
@@ -18,6 +13,8 @@ h2 {
 img {
     display: block;
     max-width: 100%;
+    height: 300px;
+    width: 300px;
 }
 
 a,
@@ -33,35 +30,54 @@ h3 {
 hr {
     height: 4px !important;
     width: 110px;
-    margin-top: 30px !important;
-    margin-bottom: 50px !important;
     position: relative;
-    background: #7bc3d1;
+    background: #000000;
+    margin-top: 25px !important;
+    margin-bottom: 50px !important;
 }
+
 /****** NAVBAR *******/
-.navbar {
+.navbar{
+    background-color: #000;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
+.navbar-brand{
+    color: #ffffff;
+}
+
+.navbar-brand:hover{
+    color: #1c99a2 !important;
+}
+
 .navbar .navbar-nav > li > a {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
-    color: #d9d9d9 !important;
+    color: #1c99a2 !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active{
-    color: #d9d9d9 !important;
+    color: #1c99a2 !important;
 }
 
 /****** Banner and banner slant *******/
 #banner-image{
+    display: table;
+    width: 100%;
+    background: url(/static/images/banner.jpeg)center top;
+    background-size: cover;
 }
 
 .banner{
     position: relative;
+    background-color: #ffffff;
     padding-top: 15%;
     padding-bottom: 15%;
     color: #fff;
@@ -70,7 +86,7 @@ hr {
 }
 
 .banner h1{
-    color: #000000 !important;
+    color: #fff !important;
 }
 
 .banner h3{
@@ -84,12 +100,25 @@ hr {
     height: 8vw;
 }
 
+/********** about me skew **********/
+.about {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 10%;
+}
+
+.about-slant{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
 /******** Experience ***********/
 .experience-sec {
     position: relative;
-    padding-top: 5%;
     padding-bottom: 10%;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
 }
 
 .exp-slant{
@@ -142,24 +171,25 @@ hr {
 
 .timeline-marker:before {
     content: "";
-    background: #7bc3d1;
-    border: 3px solid transparent;
-    border-radius: 100%;
-    display: block;
-    height: 15px;
     position: absolute;
-    top: 4px;
     left: 0;
-    width: 15px;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    margin-left: -2.5px;
+    border: 3px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
 }
 
 .timeline-marker:after {
     content: "";
     width: 3px;
-    background: #CCD5DB;
+    background: #d9d9d9;
     display: block;
     position: absolute;
-    top: 24px;
+    top: 20px;
     bottom: 0;
     left: 6px;
 }
@@ -170,7 +200,7 @@ hr {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid #FF6B6B;
+    border: 3px solid #000000;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -180,38 +210,6 @@ hr {
 .timeline-content p:last-child {
     margin-bottom: 0;
 }   
-
-/*----- TIMELINE PERIOD -----*/
-.period {
-    padding: 0;
-}
-.period .timeline-info {
-    display: none;
-}
-.period .timeline-marker:before {
-    background: transparent;
-    content: "";
-    width: 15px;
-    height: auto;
-    border: none;
-    border-radius: 0;
-    top: 0;
-    bottom: 30px;
-    position: absolute;
-    border-top: 3px solid #CCD5DB;
-    border-bottom: 3px solid #CCD5DB;
-}
-.period .timeline-marker:after {
-    content: "";
-    height: 32px;
-    top: auto;
-}
-.period .timeline-content {
-    padding: 40px 0 70px;
-}
-.period .timeline-title {
-    margin: 0;
-}
 
 /****Centered timeline****/
 @media (min-width: 992px) {
@@ -287,36 +285,28 @@ hr {
     }
 }
 
-/********** cv skew **********/
-.resume{
-    background-color: #e6e6e6;
-    padding-top: 5%;
-}
-
-.feature img {
-    width: 100%;
-    max-width: 480px;
-}
-
-/********** about me skew **********/
-.about {
+/**************** Skills ****************/
+.skills{
     position: relative;
-    background-color: #e6e6e6;
-    padding-top: 5%;
     padding-bottom: 10%;
+    color: white;
+    background-color: #121d1f;
 }
 
-.about-slant{
+.skills hr{
+    background: white !important;
+}
+
+.skills-slant{ 
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 8vw;
 }
-
 /********** Project Section **********/
 .project {
+    background-color: #d9d9d9;
     position: relative;
-    padding-top: 5%;
     padding-bottom: 10%;
 }
 
@@ -338,9 +328,8 @@ hr {
 
 /********** contact **********/
 #contact {
-    padding-top: 10%;
     padding-bottom: 15%;
-    background: #192440;
+    background: #000;
 }
 
 #contact ul li {
@@ -399,8 +388,8 @@ hr {
 
 .banner-btn {
     background: transparent;
-    color: #000000;
-    border-color:#000 !important;
+    color: #fff;
+    border-color:#fff !important;
 }
 
 .banner-btn:hover {
