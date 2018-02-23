@@ -21,11 +21,11 @@ h3 {
 }
 
 hr {
-    height: 4px !important;
+    height: 3px !important;
     width: 110px;
     position: relative;
     background: #000000;
-    margin-top: 25px !important;
+    margin-top: 20px !important;
     margin-bottom: 50px !important;
 }
 
@@ -44,7 +44,7 @@ hr {
 }
 
 .navbar-brand:hover{
-    color: #1c99a2 !important;
+    color: #0dbab1 !important;
 }
 
 .navbar .navbar-nav > li > a {
@@ -53,11 +53,11 @@ hr {
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
-    color: #1c99a2 !important;
+    color: #0dbab1 !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active{
-    color: #1c99a2 !important;
+    color: #0dbab1 !important;
 }
 
 /****** Banner and banner slant *******/
@@ -70,20 +70,23 @@ hr {
 
 .banner{
     position: relative;
-    background-color: #ffffff;
     padding-top: 15%;
     padding-bottom: 15%;
     color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+@media screen and (min-width: 800px){
+    .rwd-break { display: none; }
 }
 
 .banner h1{
     color: #fff !important;
+
 }
 
 .banner h3{
     color: grey !important;
+    font-size: 30px !important;
 }
 
 .slant{
@@ -114,7 +117,7 @@ hr {
     height: 300px;
     width: 300px;
     margin: 10px;
-    border: 12px solid rgba(28, 153, 162, .9) !important;
+    border: 12px solid rgba(13, 186, 177, .8) !important;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
@@ -125,7 +128,7 @@ hr {
     padding-top: 90px;
     padding-bottom: 10%;
     color: white;
-    background-color: #1c99a2;
+    background-color: #0dbab1;
 }
 
 .skills hr{
@@ -196,6 +199,10 @@ hr {
     height: 8vw;
 }
 
+.experience-sec hr{
+    background: #0dbab1 !important;
+}
+
 /****** Experience and Education Timeline *******/
 .timeline{
     list-style: none;
@@ -245,16 +252,16 @@ hr {
     height: 20px;
     top: 0;
     margin-left: -2.5px;
-    border: 3px solid #000000;
-    border-radius: 100%;
+    background-color: #0dbab1;
+    border: 3px solid #0dbab1;
     text-align: center;
-    background: #fff;
+    border-radius: 100%;
 }
 
 .timeline-marker:after {
     content: "";
     width: 3px;
-    background: #d9d9d9;
+    background: #000;
     display: block;
     position: absolute;
     top: 20px;
@@ -267,9 +274,10 @@ hr {
 }
 
 .timeline-item:not(.period):hover .timeline-marker:before {
-    background: solid;
-    background-color: #1c99a2;
-    border: 3px solid #1c99a2;
+    border: 3px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
 }
 
 /*----- TIMELINE CONTENT -----*/
@@ -359,7 +367,7 @@ hr {
     background-color: #d9d9d9;
     position: relative;
     padding-top: 90px;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
 }
 
 .project-slant {
@@ -369,20 +377,25 @@ hr {
     height: 8vw;
 }
 
-#price-table__premium {
-    background: #1c99a2;
-    color: #ffffff;
+.card-img-top{
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    transition: ease .5s;
 }
 
-#price-table ul li {
-    padding: 5px 0;
+.card-img-top:hover{
+    opacity: .5;
+}
+
+.project-item {
+    margin-bottom: 30px;
 }
 
 /********** contact **********/
 #contact {
     padding-top: 90px;
     padding-bottom: 10%;
-    background: #1c99a2;
+    background: #0dbab1;
 }
 
 #contact hr{
@@ -412,7 +425,7 @@ hr {
 }
 
 #social-media a:hover {
-    background: #1c99a2;
+    background: #000;
 }
 
 #social-media a:hover i {
@@ -444,8 +457,8 @@ hr {
 
 .banner-btn:hover {
     color: #fff;
-    background-color: #1c99a2;
-    border-color: #1c99a2 !important;
+    background-color: #0dbab1;
+    border-color: #0dbab1 !important;
 }
 
 .resume-btn {
