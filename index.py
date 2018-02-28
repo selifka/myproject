@@ -11,4 +11,4 @@ def before_request():
 app.before_request(before_request)
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0')
+    app.run(host='0.0.0.0')
