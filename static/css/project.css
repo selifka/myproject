@@ -1,40 +1,473 @@
-.navbar-big{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	background-color: rgba(0, 0, 0, 0.7);
+/********** common setting **********/
+body, html {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #000000 !important;
 }
 
-
-
-
-
-#section1{
-	background-color: #1abc9c; /* Green */
-	color: #ffffff;
-	padding-top: 150px;
-	height:500px;
+h2 {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 34px;
 }
-#section2 {
-	background-color: #474e5d; /* Dark Blue */
-	color: #ffffff;
-	padding-top: 150px;
-	height:500px;
+
+a,
+button {
+    cursor: pointer;
 }
-#section3 {
-	background-color: #ffffff; /* White */
-	color: #555555;
-	padding-top: 150px;
-	height:500px;
+
+h3 {
+    font-size: 1.5rem !important;
+    font-family: 'Lekton', sans-serif !important;
 }
-#section4{
-	background-color: #1abc9c; /* Green */
-	color: #ffffff;
-	padding-top: 150px;
-	height:500px;
+
+hr {
+    height: 3px !important;
+    width: 110px;
+    position: relative;
+    background: #000000;
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
 }
-#section5{
-	background-color: #474e5d; /* Dark Blue */
-	color: #ffffff;
-	padding-top: 150px;
-	height:500px;	 
+
+/****** NAVBAR *******/
+.navbar{
+    background-color: #000;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    color: #ffffff;
+}
+
+.navbar-brand:hover{
+    color: #0dbab1 !important;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #0dbab1 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: #0dbab1 !important;
+}
+
+/****** Banner and banner slant *******/
+#banner-image{
+    display: table;
+    width: 100%;
+    background: url(/static/images/banner.jpg)center top;
+    background-repeat: no-repeat;
+}
+
+.banner{
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    color: #fff;
+}
+
+@media screen and (min-width: 800px){
+    .rwd-break { display: none; }
+}
+
+.banner h1{
+    color: #fff !important;
+
+}
+
+.banner h3{
+    color: grey !important;
+    font-size: 30px !important;
+}
+
+.slant{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
+/********** about me skew **********/
+.about {
+    position: relative;
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 10%;
+}
+
+.about-slant{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
+.about img {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: 12px solid rgba(13, 186, 177, .8) !important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+/**************** Skills ****************/
+.skills{
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 10%;
+    color: white;
+    background-color: #0dbab1;
+}
+
+.skills hr{
+    background: white !important;
+}
+
+.skills-slant{ 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
+/****** SKills progress bars *****/
+#skills h2 {
+    color: #fff;
+}
+#skills hr {
+    background: rgba(255,255,255,0.3);
+}
+#skills .skill {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0px;
+}
+#skills .skill h4 {
+    font-weight: 600;
+    color: #fff;
+}
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 152px;
+    height: 152px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.percent {
+    display: inline-block;
+    font-size: 21px;
+    color: #121d1f;
+    line-height: 152px;
+    z-index: 2;
+}
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+
+/******** Experience ***********/
+.experience-sec {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 10%;
+    background-color: #ffffff;
+}
+
+.exp-slant{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
+.experience-sec hr{
+    background: #0dbab1 !important;
+}
+
+/****** Experience and Education Timeline *******/
+.timeline{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+    line-height: inherit;
+}
+
+/***Adds a left margin for the timeline***/
+.timeline-item{
+    padding-left: 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+.timeline-marker:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    margin-left: -2.5px;
+    background-color: #0dbab1;
+    border: 3px solid #0dbab1;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.timeline-marker:after {
+    content: "";
+    width: 3px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 6px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+    border: 3px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+    padding-bottom: 40px;
+}
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}   
+
+/****Centered timeline****/
+@media (min-width: 992px) {
+    .timeline-centered,
+    .timeline-centered .timeline-item,
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-marker,
+    .timeline-centered .timeline-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline-centered .timeline-item {
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .timeline-centered .timeline-marker {
+        position: absolute;
+        left: 50%;
+        margin-left: -7.5px;
+    }
+
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-content {
+        width: 50%;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered > .timeline-item.period .timeline-content {
+        float: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-centered .timeline-item.period {
+        padding: 50px 0 90px;
+    }
+
+    .timeline-centered .period .timeline-marker:after {
+        height: 30px;
+        bottom: 0;
+        top: auto;
+    }
+
+    .timeline-centered .period .timeline-title {
+        left: auto;
+    }
+}
+
+/********** Project Section **********/
+.project {
+    background-color: #d9d9d9;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 15%;
+}
+
+.project-slant {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vw;
+}
+
+.card-img-top{
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    transition: ease .5s;
+}
+
+.card-img-top:hover{
+    opacity: .5;
+}
+
+.project-item {
+    margin-bottom: 30px;
+}
+
+/********** contact **********/
+#contact {
+    padding-top: 90px;
+    padding-bottom: 10%;
+    background: #0dbab1;
+}
+
+#contact hr{
+    background: white !important;
+}
+
+/******* Footer *************/
+#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #000;
+}
+
+/********** social **********/
+#social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#social-media a i {
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#social-media a:hover {
+    background: #000;
+}
+
+#social-media a:hover i {
+    color: #ffffff;
+}
+
+/****** Buttons *******/
+.custom-btn {
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    transition: .4s ease-in-out !important;
+}
+
+.custom-btn:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.custom-btn-wide {
+    width: 100%;
+}
+
+.banner-btn {
+    background: transparent;
+    color: #fff;
+    border-color:#fff !important;
+    padding: 10px 30px !important;
+}
+
+.banner-btn:hover {
+    color: #fff;
+    background-color: #0dbab1;
+    border-color: #0dbab1 !important;
+}
+
+.resume-btn {
+    background: #000;
+    color: #ffffff;
+    border-color: #fff;
+}
+
+.resume-btn:hover {
+    color: #ffffff;
+    background: #1c99a2;
 }
