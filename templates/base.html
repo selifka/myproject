@@ -13,7 +13,7 @@
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lekton|Open+Sans|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400i|Montserrat" rel="stylesheet">
 
     <title>Sharayah</title>
 </head>
@@ -34,10 +34,10 @@
                 <a class="nav-link" href="#aboutme">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#project">Project</a>
@@ -52,19 +52,15 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner" id="banner-image">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 class="display-1 text-center">
-              Hi, I'm <br class="rwd-break"><span style="color: #0dbab1">Sharayah</span></br>
-            </h1>
-            <h3 class="py-1">Entry Level DevOps and Front End Developer
-            </h3>
-            <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 font-weight-bold custom-btn banner-btn">Linkedin</a>
-          </div>
-        </div>
-      </div>
+  <div class="my-5 banner banner-fonts">
+	  <div class="container">
+	       <h1>
+	         Hi, I'm Sharayah
+	       </h1>
+		   <h3 class="py-1">Entry Level DevOps and Front End Developer
+		   </h3>
+		   <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 custom-btn banner-btn">Linkedin</a>
+	  </div>
   </div>
 
   <!-- About -->
@@ -73,53 +69,27 @@
       <h2 class="text-center font-weight-bold">About Me</h2>
       <hr>
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-4">
           <img src="/static/images/me.jpg" class="mx-auto d-block rounded-circle">
         </div>
-        <div class="col-md-8 offset-md-2">
-          <p class="my-5">
+        <div class="col-md-8 my-5">
+    	  <h3 class="py-2"> I am a web developer and DevOps Engineer
+    	  </h3>
+          <p class="py-2">
               Aside from developing websites and working on IT automation, I love watching TV shows like Star Trek, Black Mirror, and Family Guy. 
               I also enjoy playing video games, especially fantasy genres like Skyrim! 
               When I need to take a break from the screen I love to cook, bike, and spend time with my friends. I have a particular interest in
               nutrition and overall wellness!
             </p>
-          <p class="text-center">
-            <a href="/static/resume/sharayah-resume.pdf" download class="btn my-4 font-weight-bold custom-btn resume-btn">Download Resume</a>
+          <p>
+            <a href="/static/resume/sharayah-resume.pdf" download class="btn custom-btn resume-btn">Download Resume</a>
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Skills -->
-  <div id="skills" class="skills">
-    <div class="container">
-        <h2 class="text-center">Skills</h2>
-        <hr>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
-          <h4>Python</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="55"> <span class="percent">55</span> </span>
-          <h4>Ansible</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
-          <h4>Docker</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-          <h4>AWS</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
-          <h4>Bootstrap</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-          <h4>HTML/CSS</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Experience -->
+ <!-- Experience -->
   <div class="experience-sec" id="experience">
     <div class="container">
       <h2 class="text-center font-weight-bold">My Experience</h2>
@@ -174,6 +144,25 @@
               </div>
           </li>
         </ul>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div id="skills" class="skills">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <hr>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+          <h4>Ansible</h4>
+        </div>
+        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="55"> <span class="percent">55</span> </span>
+          <h4>Docker</h4>
+        </div>
+        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+          <h4>AWS</h4>
+        </div>
+      </div>
     </div>
   </div>
 
