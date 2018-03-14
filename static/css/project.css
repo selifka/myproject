@@ -1,9 +1,11 @@
 /********** Common Setting **********/
 body, html {
     position: relative;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 h1 {
+    font-size: 4.5rem !important;
     letter-spacing: 12px !important;
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -14,9 +16,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem !important;
-    font-size: 25px !important;
-    font-family: 'Lora', serif !important;
+    font-size: 1.8rem !important;
+    font-family: 'Shadows Into Light', cursive !important;
 }
 
 a,
@@ -24,56 +25,99 @@ button {
     cursor: pointer;
 }
 
+/****** Buttons *******/
+.custom-btn {
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    transition: .4s ease-in-out !important;
+}
+
+.custom-btn:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.custom-btn-wide {
+    width: 100%;
+}
+
+.banner-btn {
+    background: transparent;
+    color: #fff;
+    border-color:#fff !important;
+    padding: 10px 30px !important;
+}
+
+.banner-btn:hover {
+    color: #fff;
+    background-color: #0dbab1;
+    border-color: #0dbab1 !important;
+}
+
+.resume-btn {
+    background: #000;
+    color: #ffffff;
+    border-color: #fff;
+}
+
+.resume-btn:hover {
+    color: #ffffff;
+    background: #1c99a2;
+}
+
 hr {
-    height: 3px !important;
-    width: 70px;
+    height: 1.5px !important;
+    width: 65px;
     position: relative;
     background: #000000;
-    margin-top: 20px !important;
+    margin-top: 15px !important;
     margin-bottom: 50px !important;
 }
 
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
+/************ Breakpoints 1rem = 16px *****************/
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {  
-  h1 {font-size:1.5rem;} /*1rem = 16px*/
+@media (max-width: 544px) {  
+    h1 {
+        font-size:2.5rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    h3 {
+        font-size:1.2rem !important;
+    }
+
+    .custom-btn {
+        padding: 5px 10px !important;
+    }
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  h1 {font-size:2rem;} /*1rem = 16px*/
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  h1 {font-size:2.5rem;} /*1rem = 16px*/
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-  h1 {font-size:3rem;} /*1rem = 16px*/    
+@media (max-width: 768px) {  
+    h1 {
+        font-size:3rem !important;
+    } 
+
+    h3 {
+        font-size:1.3rem !important;
+    }
 }
 
 /****** NAVBAR *******/
-.navbar{
+.navbar {
     font-family: 'Montserrat', sans-serif !important;
-    background-color: #000;
+    background-color: #111517;
     font-size: 13px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
-.navbar-brand{
-    color: #ffffff;
-    font-family: 'Lora', serif;
+.navbar-brand {
+    font-family: 'Shadows Into Light', cursive !important;
     text-transform: none;
     font-size: 25px !important;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: #0dbab1 !important;
 }
 
@@ -86,13 +130,13 @@ Bootstrap 4 breakpoints
     color: #0dbab1 !important;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.active{
+.navbar .navbar-nav .nav-item .nav-link.active {
     color: #0dbab1 !important;
 }
 
 /****** Banner *******/
 .banner {
-    background-color: black;
+    background-color: #111517;
     padding-top: 15%;
     padding-bottom: 15%;
 }
@@ -108,123 +152,25 @@ Bootstrap 4 breakpoints
 /********** about me skew **********/
 .about {
     position: relative;
-    background-color: #fff;
+    background-color: #ddeff8;
     padding-top: 80px;
-    padding-bottom: 10%;
-}
-
-.about h2, hr {
-    z-index: 1; 
-    position:relative;
-}
-
-.about:before { 
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15%;
-    top: -50px;
-    left: 0;
-    background-color: white;
-    transform-origin: top left;
-    transform: skewY(-3deg);
+    padding-bottom: 5%;
 }
 
 .about img {
     display: block;
     max-width: 100%;
-    height: 300px;
+    height: auto;
     width: 300px;
-    margin: 10px;
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
-/**************** Skills ****************/
-.skills{
-    position: relative;
-    padding-top: 90px;
-    padding-bottom: 10%;
-    color: white;
-    background-color: #0dbab1;
-}
-
-.skills hr{
-    background: white !important;
-}
-
-.skills-slant{ 
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 8vw;
-}
-
-/****** SKills progress bars *****/
-#skills h2 {
-    color: #fff;
-}
-#skills hr {
-    background: rgba(255,255,255,0.3);
-}
-#skills .skill {
-    margin-bottom: 40px;
-    text-align: center;
-    padding: 0px;
-}
-#skills .skill h4 {
-    font-weight: 600;
-    color: #fff;
-}
-.chart {
-    position: relative;
-    display: inline-block;
-    width: 152px;
-    height: 152px;
-    margin-bottom: 26px;
-    text-align: center;
-}
-.chart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.percent {
-    display: inline-block;
-    font-size: 21px;
-    color: #121d1f;
-    line-height: 152px;
-    z-index: 2;
-}
-.percent:after {
-    content: '%';
-    margin-left: 0.1em;
-    font-size: .8em;
-}
 
 /******** Experience ***********/
 .experience-sec {
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 10%;
-    background-color: black;
-}
-
-.experience-sec h2, hr {
-    z-index: 1; 
-    position:relative;
-}
-
-.experience-sec:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15%;
-    top: -60px;
-    left: 0;
+    padding-top: 90px;
+    padding-bottom: 5%;
     background-color: white;
-    transform-origin: top left;
-    transform: skewY(-3deg);
 }
 
 /****** Experience and Education Timeline *******/
@@ -386,19 +332,27 @@ Bootstrap 4 breakpoints
     }
 }
 
-/********** Project Section **********/
-.project {
-    background-color: #d9d9d9;
-    position: relative;
+/**************** Skills ****************/
+.skills {
     padding-top: 90px;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+    background-color: #111517;
 }
 
-.project-slant {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 8vw;
+.skills h2 {
+    color: #fff !important;
+}
+
+.skills hr {
+    background-color: #fff !important;
+    height: 1.1px !important;
+}
+
+/********** Project Section **********/
+.project {
+    background-color: #ddeff8;
+    padding-top: 90px;
+    padding-bottom: 5%;
 }
 
 .card-img-top{
@@ -411,26 +365,22 @@ Bootstrap 4 breakpoints
     opacity: .5;
 }
 
-.project-item {
-    margin-bottom: 30px;
-}
-
 /********** contact **********/
 #contact {
     padding-top: 90px;
     padding-bottom: 10%;
-    background: #0dbab1;
+    background: #ffffff;
 }
 
-#contact hr{
-    background: white !important;
+#contact h2, p {
+    color: #000000;
 }
 
 /******* Footer *************/
 #footer {
     padding-top: 25px;
     padding-bottom: 25px;
-    background: #000;
+    background-color: #111517;
 }
 
 /********** social **********/
@@ -438,7 +388,7 @@ Bootstrap 4 breakpoints
     width: 40px;
     height: 40px;
     border-radius: 99%;
-    background: #ffffff;
+    background-color: #ddeff8;
     transition: .4s ease;
 }
 
@@ -454,44 +404,4 @@ Bootstrap 4 breakpoints
 
 #social-media a:hover i {
     color: #ffffff;
-}
-
-/****** Buttons *******/
-.custom-btn {
-    padding: 10px 20px !important;
-    border-radius: 0 !important;
-    transition: .4s ease-in-out !important;
-}
-
-.custom-btn:hover {
-    text-decoration: none;
-    transform: translateY(-5px);
-}
-
-.custom-btn-wide {
-    width: 100%;
-}
-
-.banner-btn {
-    background: transparent;
-    color: #fff;
-    border-color:#fff !important;
-    padding: 10px 30px !important;
-}
-
-.banner-btn:hover {
-    color: #fff;
-    background-color: #0dbab1;
-    border-color: #0dbab1 !important;
-}
-
-.resume-btn {
-    background: #000;
-    color: #ffffff;
-    border-color: #fff;
-}
-
-.resume-btn:hover {
-    color: #ffffff;
-    background: #1c99a2;
 }
