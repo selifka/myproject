@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 2.5rem !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -76,31 +76,15 @@ hr {
 
 /************ Breakpoints 1rem = 16px *****************/
 /* Small devices (landscape phones, 544px and up) */
-@media (max-width: 544px) {  
-    h1 {
-        font-size:2.5rem !important;
-        letter-spacing: 1px !important;
-    }
-
-    h3 {
-        font-size:1.2rem !important;
-    }
-
-    .custom-btn {
-        padding: 5px 10px !important;
-    }
+@media (max-width: 544px) { 
+    .banner { padding-top: 40% !important; padding-bottom: 30% !important; } 
+    h1 {font-size:3rem !important; 
+        letter-spacing: 1px !important;}
+    h2 {font-size:2.5rem !important;}
+    h3 {font-size:1.5rem !important;}
+    .custom-btn {padding: 5px 10px !important;}
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (max-width: 768px) {  
-    h1 {
-        font-size:3rem !important;
-    } 
-
-    h3 {
-        font-size:1.3rem !important;
-    }
-}
 
 /****** NAVBAR *******/
 .navbar {
