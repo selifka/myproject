@@ -2,16 +2,17 @@
 body, html {
     position: relative;
     font-family: 'Raleway', sans-serif !important;
+    background-color: #111517;
 }
 
 h1 {
-    font-size: 4.5rem !important;
+    font-size: 4.8rem !important;
     letter-spacing: 12px !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
 h2 {
-    font-size: 2.5rem !important;
+    font-size: 2.6rem !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -21,21 +22,29 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem !important;
-    letter-spacing: 8px !important;
+    font-size: 1.8rem !important;
+    letter-spacing: 6px !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
-a,
-button {
-    cursor: pointer;
+h5 {
+    font-size: .9rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold !important;
 }
+
+h6 {
+    font-size: 1.7rem !important;
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
 
 /****** Buttons *******/
 .custom-btn {
     padding: 10px 20px !important;
     border-radius: 0 !important;
     transition: .4s ease-in-out !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .custom-btn:hover {
@@ -49,35 +58,35 @@ button {
 
 .banner-btn {
     background: transparent;
+    border-color: #C3073F !important;
     color: #fff;
-    border-color:#fff !important;
-    padding: 10px 30px !important;
+    font-weight: bold;
+    font-size: 1.2rem !important;
 }
 
 .banner-btn:hover {
     color: #fff;
-    background-color: #0dbab1;
-    border-color: #0dbab1 !important;
+    background-color: #C3073F;
 }
 
 .resume-btn {
-    background: #000;
-    color: #ffffff;
-    border-color: #fff;
+    color: #fff;
+    background-color: #111517;
 }
 
 .resume-btn:hover {
     color: #ffffff;
-    background: #1c99a2;
+    background: #C3073F;
 }
 
+/*********** HR ****************/
 hr {
-    height: 1.5px !important;
-    width: 65px;
+    height: 1.8px !important;
+    width: 45px;
     position: relative;
     background: #000000;
     margin-top: 15px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
 }
 
 /************ Breakpoints 1rem = 16px *****************/
@@ -105,11 +114,12 @@ hr {
 .navbar-brand {
     font-family: 'Shadows Into Light', cursive !important;
     text-transform: none;
-    font-size: 25px !important;
+    font-size: 28px !important;
+    color:  #fff !important;
 }
 
 .navbar-brand:hover {
-    color: #0dbab1 !important;
+    color:  #C3073F !important;
 }
 
 .navbar .navbar-nav > li > a {
@@ -118,18 +128,24 @@ hr {
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
-    color: #0dbab1 !important;
+    color: #C3073F !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
-    color: #0dbab1 !important;
+    color: #C3073F !important;
 }
 
 /****** Banner *******/
 .banner {
     background-color: #111517;
     padding-top: 15%;
-    padding-bottom: 15%;
+    padding-bottom: 12%;
+}
+
+.banner hr {
+    background-color: #C3073F !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
 }
 
 .banner-fonts h1 {
@@ -137,22 +153,23 @@ hr {
 }
 
 .banner-fonts h3 {
-    color: grey !important;
+    color: #fff !important;
+    font-size: 1.6rem !important;
 }
 
 /********** about me skew **********/
 .about {
     position: relative;
-    background-color: #ddeff8;
-    padding-top: 80px;
-    padding-bottom: 5%;
+    background-color: #CAEBF2;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .about img {
     display: block;
     max-width: 100%;
     height: auto;
-    width: 300px;
+    width: 250px;
 }
 
 
@@ -160,21 +177,16 @@ hr {
 .experience-sec {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 5%;
+    padding-bottom: 50px;
     background-color: white;
 }
     /****** Timeline *******/
     .timeline{
-        list-style: none;
         width: 100%
     }
 
-    .timeline h1, .timeline h2, .timeline h3, .timeline h4 {
-        line-height: inherit;
-    }
-
     /***Adds a left margin for the timeline***/
-    .timeline-item{
+    .timeline-item {
         padding-left: 25px;
         position: relative;
     }
@@ -182,7 +194,7 @@ hr {
     /*----- TIMELINE MARKER -----*/
     .timeline-marker {
         position: absolute;
-        top: 0;
+        top: -8px;
         bottom: 0;
         left: -25px;
     }
@@ -194,8 +206,8 @@ hr {
         width: 30px;
         height: 30px;
         top: 5.5px;
-        border: 2px solid #000000;
-        background-color: white;
+        border: 1.4px solid #000;
+        background-color: #CAEBF2;
         text-align: center;
         transform: rotate(45deg);
         z-index: 1;
@@ -203,7 +215,7 @@ hr {
 
     .timeline-marker:after {
         content: "";
-        width: 2px;
+        width: 1.5px;
         background: #000;
         position: absolute;
         bottom: 0;
@@ -227,12 +239,12 @@ hr {
     @media (min-width: 992px) {
         .timeline-centered,
         .timeline-centered .timeline-item,
-        .timeline-centered .timeline-info,
         .timeline-centered .timeline-marker,
         .timeline-centered .timeline-content {
             display: block;
             margin: 0;
             padding: 0;
+            top: 0;
         }
 
         .timeline-centered .timeline-item {
@@ -246,33 +258,23 @@ hr {
             margin-left: -7.5px;
         }
 
-        .timeline-centered .timeline-info,
         .timeline-centered .timeline-content {
             width: 50%;
-        }
-
-        .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
-            float: left;
-            text-align: right;
-            padding-right: 40px;
+            padding-top: 13px; 
         }
 
         .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
             float: right;
             text-align: left;
             padding-left: 40px;
-        }
-
-        .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
-            float: right;
-            text-align: left;
-            padding-left: 40px;
+            padding-bottom: 20px;
         }
 
         .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
             float: left;
             text-align: right;
             padding-right: 40px;
+            padding-bottom: 20px;
         }
 
         .timeline-centered > .timeline-item.period .timeline-content {
@@ -281,26 +283,12 @@ hr {
             width: 100%;
             text-align: center;
         }
-
-        .timeline-centered .timeline-item.period {
-            padding: 50px 0 90px;
-        }
-
-        .timeline-centered .period .timeline-marker:after {
-            height: 30px;
-            bottom: 0;
-            top: auto;
-        }
-
-        .timeline-centered .period .timeline-title {
-            left: auto;
-        }
     }
 
 /**************** Skills ****************/
 .skills {
     padding-top: 90px;
-    padding-bottom: 10%;
+    padding-bottom: 90px;
     background-color: #111517;
 }
 
@@ -308,37 +296,43 @@ hr {
     color: #fff !important;
 }
 
+.skills h3 {
+    font-size: 1.9rem !important;
+}
+
+.skills p {
+    color: #C5C6C7 !important;
+}
+
 .skills hr {
-    background-color: #fff !important;
-    height: 1.1px !important;
+    background-color: #C3073F !important;
+}
+
+.skills .fa {
+    color: #C3073F !important;
 }
 
 /********** Project Section **********/
 .project {
-    background-color: #ddeff8;
+    background-color: #CAEBF2;
     padding-top: 90px;
-    padding-bottom: 5%;
+    padding-bottom: 90px;
 }
 
-.card-img-top{
-    -webkit-transition: ease .5s;
-    -moz-transition: ease .5s;
-    transition: ease .5s;
-}
-
-.card-img-top:hover{
-    opacity: .5;
-}
 
 /********** contact **********/
 #contact {
     padding-top: 90px;
-    padding-bottom: 10%;
+    padding-bottom: 90px;
     background: #ffffff;
 }
 
 #contact h2, p {
     color: #000000;
+}
+
+.skills hr {
+    background-color: #C3073F !important;
 }
 
 /******* Footer *************/
