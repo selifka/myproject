@@ -308,7 +308,7 @@ hr {
     background-color: #C3073F !important;
 }
 
-.skills .fa {
+.skills .fa-docker, .fa-html5, .fa-aws {
     color: #C3073F !important;
 }
 
@@ -331,8 +331,16 @@ hr {
     color: #000000;
 }
 
-.skills hr {
+.contact hr {
     background-color: #C3073F !important;
+}
+
+.contact a {
+    color: #000;
+}
+
+.contact a:hover {
+    color: #C3073F !important;
 }
 
 /******* Footer *************/
@@ -344,23 +352,20 @@ hr {
 
 /********** social **********/
 #social-media a {
-    width: 40px;
-    height: 40px;
-    border-radius: 99%;
-    background-color: #ddeff8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CAEBF2;
     transition: .4s ease;
 }
 
-#social-media a i {
-    color: #000;
-    font-size: 1.2rem;
-    line-height: 40px;
+#social-media .fa-github, .fa-linkedin-in, .fa-facebook-f {
+    color: #000 !important;
+    margin-top: 14px;
+    font-size: 1.3rem;
 }
 
-#social-media a:hover {
-    background: #000;
-}
-
-#social-media a:hover i {
-    color: #ffffff;
+#social-media a:hover, .fa-github:hover, .fa-linkedin-in:hover, .fa-facebook-f:hover {
+    color: #ffffff !important;
+    background: #C3073F;
 }
