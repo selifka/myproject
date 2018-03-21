@@ -52,15 +52,15 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner banner-fonts">
+  <div class="banner banner-fonts" id="banner">
 	  <div class="text-center container">
 	       <h1>
 	         Sharayah Corcoran
 	       </h1>
 	       <hr>
-		   <h3 class="my-3">Entry Level DevOps and Front End Developer
+		   <h3 class="my-4">DevOps and Web Developer
 		   </h3>
-		   <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="btn my-4 custom-btn banner-btn">Linkedin</a>
+		   <a href="#aboutme" class="btn custom-btn banner-btn">Learn More</a>
 	  </div>
   </div>
 
@@ -73,16 +73,13 @@
         <div class="col-md-4 py-3">
           <img src="/static/images/me.jpg" class="mx-auto d-block img-fluid rounded-circle">
         </div>
-        <div class="col-md-8 my-4">
-    	  <h3> I am a web developer and DevOps Engineer
+        <div class="col-md-8 py-3">
+    	  <h3>I am passionate about web development and IT automation!
     	  </h3>
-          <p class="py-3">
-              Aside from developing websites and working on IT automation, I love watching TV shows like Star Trek, Black Mirror, and Family Guy. 
-              I also enjoy playing video games, especially fantasy genres like Skyrim! 
-              When I need to take a break from the screen I love to cook, bike, and spend time with my friends. I have a particular interest in
-              nutrition and overall wellness!
+          <p class="my-4">
+              My name is Sharayah Corcoran, I am a recent college graduate with a passion for web development and IT automation! I strive to create and manage highly available and scalable IT infrastructures. When I’m not working on my IT skills I enjoy spending time with friends, watching Netflix, and being active! Please click the button below to view my full resume!
             </p>
-            <a href="/static/resume/sharayah-resume.pdf" download class="btn custom-btn resume-btn">Download Resume</a>
+            <a href="/static/resume/sharayah-resume.pdf" download class="btn custom-btn resume-btn my-1">Download Resume</a>
         </div>
       </div>
     </div>
@@ -101,11 +98,9 @@
               	<h5>2014 - Present</h5>
                 <h4>The Computer Guys</h4>
                 <h6>Remote Helpdesk Technician</h6>
-                <p>Resolved majority of support tickets without escalation or call backsQuickly assisted customers with computer problems including slowdowns, poor
-                network connectivity, viruses, and application trouble
-                Configured and managed Microsoft Exchange, DHCP, and IIS
-                Diagnosed, troubleshot, and resolved a range of software, and network
-                connectivity problems.
+                <p>As the company's main IT helpdesk technician, I am
+                	responsible for resolving the majority of company support 
+                	tickets. Deployed, configured, and managed remote servers on AWS. 
                 </p>
               </div>
           </li>
@@ -115,11 +110,9 @@
               	<h5>2010 - 2014</h5>
                 <h4>US Army National Guard</h4>
                 <h6>Information Technology Specialist</h6>
-                <p>Network troubleshooting, configuration, setup, and repair experience
-                Configuration of Cisco Call Manager and TACLANE experience
-                Trusted with sensitive Army computer information and held secret security
-                clearance
-                Installation and maintenance of LAN and WAN networks, and VoIP phones
+                <p>While an IT Specialist in the US Army, I was responsible for
+                	network troubleshooting, configuration, and repair. I worked 
+                	with a team to create secure networks.
                 </p>
             </div>
           </li>
@@ -129,11 +122,7 @@
               	<h5>2012 - 2017</h5>
                 <h4>University of New Hampshire</h4>
                 <h6>Computer Information Systems</h6>
-                <p>Some information about the company, take up a few lines Resolved majority of support tickets without escalation or call backsQuickly assisted customers with computer problems including slowdowns, poor
-                network connectivity, viruses, and application trouble
-                Configured and managed Microsoft Exchange, DHCP, and IIS
-                Diagnosed, troubleshot, and resolved a range of software, and network
-                connectivity problems.
+                <p>My university courses focused on web development, object oriented programming, and IT automation using tools like Docker and Ansible. 
                 </p>
               </div>
           </li>
@@ -149,31 +138,31 @@
       <hr>
       <div class="text-white row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5 mx-auto">
+            <div class="mt-4 mx-auto">
               <img src="/static/images/ansible.svg">
               <h3>Ansible</h3>
-              <p class="text-white">Our templates are updated regularly so they don't break.</p>
+              <p class="text-white">Experience automating server configuration and deployment of AWS instance using Ansible.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5 mx-auto">
+            <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-aws mb-3"></i>
               <h3>AWS</h3>
-              <p class="text-white">You can use this theme as is, or you can make changes!</p>
+              <p class="text-white">Configuration and management of AWS EC2 instances, VPC, Route S5, and much more!</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5 mx-auto">
+            <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-docker mb-3"></i>
               <h3>Docker</h3>
-              <p class="text-white">We update dependencies to keep things fresh.</p>
+              <p class="text-white">Container orchestration for high scalability and testing.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5 mx-auto">
+            <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-html5 mb-3"></i>
               <h3>HTML / CSS</h3>
-              <p class="text-white">You have to make your websites with love these days!</p>
+              <p class="text-white">Design and coding experience using HTML5 and CSS3.</p>
             </div>
           </div>
         </div>
@@ -182,22 +171,68 @@
 
   <!-- Project -->
   <div class="project" id="project">
-    <div class="container">
+    <div class="container-fluid">
       <h2 class="text-center">Projects</h2>
       <hr>
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-            <a href="https://github.com/UNH-at-Manchester/wegive">
-            <img class="img-fluid" src="/static/images/giving.jpg"></a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-            <a href="https://github.com/selifka/myproject">
-            <img class="img-fluid" src="/static/images/project.jpg"></a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-            <a href="https://github.com/selifka/Bakery-Website">
-            <img class="img-fluid" src="/static/images/bakery.jpg"></a>
-        </div>
+      <h3 class="text-center">Click the photos below to checkout my projects on Github!</h3>
+      <div class="row no-gutters my-5">
+          <div class="col-md-4 col-sm-6">
+            <a class="portfolio-box" href="https://github.com/UNH-at-Manchester/wegive">
+              <img class="img-fluid" src="/static/images/giving.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                  	<h4>
+                    WeGive
+                	</h4>
+                  </div>
+                  <div class="project-name">
+                  	<h3>
+                    Web Development
+                	</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a class="portfolio-box" href="https://github.com/selifka/myproject">
+              <img class="img-fluid" src="/static/images/project.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                  	<h4>
+                    Resume Project
+                    </h4>
+                  </div>
+                  <div class="project-name">
+                  	<h3>
+                    WebDev/DevOps
+                	</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <a class="portfolio-box" href="https://github.com/selifka/Bakery-Website">
+              <img class="img-fluid" src="/static/images/bakery.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                  	<h4>
+                    Bakery Website
+                	</h4>
+                  </div>
+                  <div class="project-name">
+                  	<h3>
+                    Web Development
+                	</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
       </div>
     </div>
   </div>
@@ -205,39 +240,39 @@
   <!-- Contact Me -->
   <div class="contact" id="contact">
     <div class="container text-center">
-        <div>
-            <h2>Contact Me</h2>
-            <hr>
-            <h3 class="py-3">
-                Feel free to reach out to me either my phone or 
-                email!
-              </h3>
-              <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                  <div class="mt-5 mx-auto">
-                    <i class="far fa-4x fa-envelope mb-3"></i>
-                    <h3><a href="mailto:sba37@wildcats.unh.edu">sba37@wildcats.unh.edu</a></h3>
-                  </div>
-                </div>
-                <div class="col-lg-8 mx-auto text-center">
-                  <div class="mt-5 mx-auto">
-                    <i class="fas fa-4x fa-mobile-alt mb-3"></i>
-                    <h3><a>603-943-1089</a></h3>
-                  </div>
-                </div>
-              </div>
-            <div class="py-5" id="social-media">
-                <a href="https://github.com/selifka/" class="d-inline-block text-center ml-2">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sharayahcorcoran/" class="d-inline-block text-center ml-2">
-                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.facebook.com/sharayah.corcoran" class="d-inline-block text-center ml-2">
-                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+	    <h2>Contact Me</h2>
+	    <hr>
+	    <div class="row py-4">
+	    	<div class="col-md-8 offset-md-2">
+			    <p class="py-2">
+		        Want to learn more about my experience? Have any comments or suggestions? 
+		        You can reach me either my email or using the social media links below!
+			    </p>
+			</div>
+		</div>
+	      <div class="row">
+	        <div class="col-md-2 offset-md-3">
+	          <div class="mt-4">
+	          	<a href="mailto:sba37@wildcats.unh.edu" class="d-inline-block text-center ml-2">
+	          	<i class="far fa-3x fa-envelope mb-3"></i>
+	          	</a>
+	          </div>
+	        </div>
+	        <div class="col-md-2">
+	          <div class="mt-4" id="social-media">
+	          	<a href="https://github.com/selifka/" class="d-inline-block text-center ml-2">
+	          	<i class="fab fa-3x fa-github" aria-hidden="true"></i>
+	          	</a>
+	          </div>
+	        </div>
+	        <div class="col-md-2">
+	          <div class="mt-4" id="social-media">
+	          	<a href="https://www.linkedin.com/in/sharayahcorcoran/" class="d-inline-block text-center ml-2">
+	          	<i class="fab fa-3x fa-linkedin-in" aria-hidden="true"></i>
+	          	</a>
+	          </div>
+	        </div>
+	      </div>
     </div>
   </div>
 
@@ -245,7 +280,7 @@
   <div id="footer">
     <div class="container">
       <div class="text-white align-self-center text-center my-2">
-            Sharayah Corcoran &middot; 2018
+      	<h5>Sharayah Corcoran &middot; 2018</h5>
       </div>
     </div>
   </div>

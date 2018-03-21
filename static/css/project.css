@@ -6,8 +6,8 @@ body, html {
 }
 
 h1 {
-    font-size: 4.8rem !important;
-    letter-spacing: 12px !important;
+    font-size: 4.7rem !important;
+    letter-spacing: 11px !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -61,7 +61,7 @@ h6 {
     border-color: #C3073F !important;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
 }
 
 .banner-btn:hover {
@@ -72,6 +72,7 @@ h6 {
 .resume-btn {
     color: #fff;
     background-color: #111517;
+    font-size: .9rem !important;
 }
 
 .resume-btn:hover {
@@ -99,8 +100,8 @@ hr {
     h3 {font-size:1.5rem !important;}
     h4 {font-size:1.2rem !important;}
     .custom-btn {padding: 5px 10px !important;}
+    .contact h4 a {font-size:.7rem !important; font-weight: bold;}
 }
- 
 
 /****** NAVBAR *******/
 .navbar {
@@ -138,14 +139,14 @@ hr {
 /****** Banner *******/
 .banner {
     background-color: #111517;
-    padding-top: 15%;
-    padding-bottom: 12%;
+    padding-top: 14%;
+    padding-bottom: 14%;
 }
 
 .banner hr {
     background-color: #C3073F !important;
-    margin-top: 25px !important;
-    margin-bottom: 25px !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
 }
 
 .banner-fonts h1 {
@@ -177,7 +178,7 @@ hr {
 .experience-sec {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: white;
 }
     /****** Timeline *******/
@@ -319,6 +320,40 @@ hr {
     padding-bottom: 90px;
 }
 
+.portfolio-box {
+    position:relative;
+    display:block;
+}
+
+.portfolio-box .portfolio-box-caption {
+    position:absolute;
+    bottom:0;
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    opacity:0;
+    color:#fff;
+    background:rgba(195,7,63,.9);
+    -webkit-transition:all 
+    .2s;-moz-transition:all 
+    .2s;transition:all .2s
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform:translateY(-50%);
+    text-align:center
+}
+.portfolio-box:hover .portfolio-box-caption {
+    opacity:1
+}
+
+.portfolio-box:focus { 
+    outline:0
+}
+
 
 /********** contact **********/
 #contact {
@@ -327,8 +362,8 @@ hr {
     background: #ffffff;
 }
 
-#contact h2, p {
-    color: #000000;
+.contact p {
+    font-size: 1.1rem !important;
 }
 
 .contact hr {
@@ -339,33 +374,22 @@ hr {
     color: #000;
 }
 
+    /********** social **********/
+    #social-media .fa-github, .fa-linkedin-in, {
+        color: #000 !important;
+    }
+
 .contact a:hover {
     color: #C3073F !important;
 }
 
 /******* Footer *************/
 #footer {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #111517;
 }
 
-/********** social **********/
-#social-media a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #CAEBF2;
-    transition: .4s ease;
-}
-
-#social-media .fa-github, .fa-linkedin-in, .fa-facebook-f {
-    color: #000 !important;
-    margin-top: 14px;
-    font-size: 1.3rem;
-}
-
-#social-media a:hover, .fa-github:hover, .fa-linkedin-in:hover, .fa-facebook-f:hover {
-    color: #ffffff !important;
-    background: #C3073F;
+#footer h5 {
+    font-weight: normal !important;
 }
