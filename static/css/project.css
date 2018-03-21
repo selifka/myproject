@@ -178,7 +178,7 @@ hr {
 .experience-sec {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     background-color: white;
 }
     /****** Timeline *******/
@@ -317,7 +317,7 @@ hr {
 .project {
     background-color: #CAEBF2;
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 }
 
 .portfolio-box {
