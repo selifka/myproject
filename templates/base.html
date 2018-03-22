@@ -8,7 +8,7 @@
 
     <!-- custom.css -->
     <link rel="stylesheet" href="/static/css/project.css">
-	  <!-- Font-Awesome -->
+	<!-- Font-Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,26 +24,26 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbarNav">
       <div class="container">
-        <a class="navbar-brand" href="#page-top">Sharayah</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sharayah</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About Me</a>
+                <a class="nav-link js-scroll-trigger" href="#aboutme">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#project">Project</a>
+                <a class="nav-link js-scroll-trigger" href="#project">Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -54,13 +54,17 @@
   <!-- Banner -->
   <div class="banner banner-fonts" id="banner">
 	  <div class="text-center container">
+	  	<div class="banner-greeting">
 	       <h1>
 	         Sharayah Corcoran
 	       </h1>
 	       <hr>
 		   <h3 class="my-4">DevOps and Web Developer
 		   </h3>
-		   <a href="#aboutme" class="btn custom-btn banner-btn">Learn More</a>
+		</div>
+		<div class="banner-btn-js">
+		   <a class="btn custom-btn banner-btn js-scroll-trigger" href="#aboutme">Learn More</a>
+		</div>
 	  </div>
   </div>
 
@@ -70,16 +74,18 @@
       <h2 class="text-center">About Me</h2>
       <hr>
       <div class="row">
-        <div class="col-md-4 py-3">
+        <div class="about-image col-md-4 py-3">
           <img src="/static/images/me.jpg" class="mx-auto d-block img-fluid rounded-circle">
         </div>
         <div class="col-md-8 py-3">
+          <div class="about-content">
     	  <h3>I am passionate about web development and IT automation!
     	  </h3>
           <p class="my-4">
               My name is Sharayah Corcoran, I am a recent college graduate with a passion for web development and IT automation! I strive to create and manage highly available and scalable IT infrastructures. When I’m not working on my IT skills, I enjoy spending time with friends, watching Netflix, and being active! Please click the button below to view my full resume!
             </p>
             <a href="/static/resume/sharayah-resume.pdf" download class="btn custom-btn resume-btn my-1">Download Resume</a>
+          </div>
         </div>
       </div>
     </div>
@@ -94,7 +100,7 @@
         <ul class="timeline timeline-centered">
           <li class="timeline-item">
             <div class="timeline-marker"></div>
-              <div class="timeline-content">
+              <div class="timeline-content t-right">
               	<h5>2014 - Present</h5>
                 <h4>The Computer Guys</h4>
                 <h6>Remote Helpdesk Technician</h6>
@@ -106,7 +112,7 @@
           </li>
           <li class="timeline-item">
               <div class="timeline-marker"></div>
-              <div class="timeline-content">
+              <div class="timeline-content t-left">
               	<h5>2010 - 2014</h5>
                 <h4>US Army National Guard</h4>
                 <h6>Information Technology Specialist</h6>
@@ -118,7 +124,7 @@
           </li>
           <li class="timeline-item">
             <div class="timeline-marker"></div>
-              <div class="timeline-content">
+              <div class="timeline-content t-right">
               	<h5>2012 - 2017</h5>
                 <h4>University of New Hampshire</h4>
                 <h6>Computer Information Systems</h6>
@@ -137,28 +143,28 @@
       <h2 class="text-center">Skills</h2>
       <hr>
       <div class="text-white row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="skill-1 col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <img src="/static/images/ansible.svg">
               <h3>Ansible</h3>
               <p class="text-white">Experience automating server configuration and deployment of AWS instance using Ansible.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="skill-2 col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-aws mb-3"></i>
               <h3>AWS</h3>
               <p class="text-white">Configuration and management of AWS EC2 instances, VPC, Route S5, and much more!</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="skill-3 col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-docker mb-3"></i>
               <h3>Docker</h3>
               <p class="text-white">Container orchestration for high scalability and testing.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="skill-4 col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-4x fa-html5 mb-3"></i>
               <h3>HTML / CSS</h3>
@@ -175,7 +181,7 @@
       <h2 class="text-center">Projects</h2>
       <hr>
       <h3 class="text-center">Click the photos below to checkout my projects on Github!</h3>
-      <div class="row no-gutters my-5">
+      <div class="row no-gutters my-5 project-js">
           <div class="col-md-4 col-sm-6">
             <a class="portfolio-box" href="https://github.com/UNH-at-Manchester/wegive">
               <img class="img-fluid" src="/static/images/giving.jpg" alt="">
@@ -251,21 +257,21 @@
 			</div>
 		</div>
 	      <div class="row">
-	        <div class="col-md-2 offset-md-3">
+	        <div class="col-md-2 offset-md-3 social-1">
 	          <div class="mt-4">
 	          	<a href="mailto:sba37@wildcats.unh.edu" class="d-inline-block text-center ml-2">
 	          	<i class="far fa-3x fa-envelope mb-3"></i>
 	          	</a>
 	          </div>
 	        </div>
-	        <div class="col-md-2">
+	        <div class="col-md-2 social-2">
 	          <div class="mt-4" id="social-media">
 	          	<a href="https://github.com/selifka/" class="d-inline-block text-center ml-2">
 	          	<i class="fab fa-3x fa-github" aria-hidden="true"></i>
 	          	</a>
 	          </div>
 	        </div>
-	        <div class="col-md-2">
+	        <div class="col-md-2 social-3">
 	          <div class="mt-4" id="social-media">
 	          	<a href="https://www.linkedin.com/in/sharayahcorcoran/" class="d-inline-block text-center ml-2">
 	          	<i class="fab fa-3x fa-linkedin-in" aria-hidden="true"></i>
@@ -286,12 +292,11 @@
   </div>
 
     <!-- Bootstrap core JavaScript -->
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- ScrollReveal JS by jlmakes -->
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
     <!-- W3 Schools Scrollspy JS -->
     <script src="/static/js/project.js"></script>

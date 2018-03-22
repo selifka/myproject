@@ -80,7 +80,7 @@ h6 {
     background: #C3073F;
 }
 
-/*********** HR ****************/
+/*********** Hr ****************/
 hr {
     height: 1.8px !important;
     width: 45px;
@@ -103,7 +103,7 @@ hr {
     .contact h4 a {font-size:.7rem !important; font-weight: bold;}
 }
 
-/****** NAVBAR *******/
+/****** Navbar *******/
 .navbar {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #111517;
@@ -136,7 +136,7 @@ hr {
     color: #C3073F !important;
 }
 
-/****** Banner *******/
+/****** Banner *****/
 .banner {
     background-color: #111517;
     padding-top: 14%;
@@ -158,7 +158,7 @@ hr {
     font-size: 1.6rem !important;
 }
 
-/********** about me skew **********/
+/********** About **********/
 .about {
     position: relative;
     background-color: #CAEBF2;
@@ -181,18 +181,17 @@ hr {
     padding-bottom: 20px;
     background-color: white;
 }
+
     /****** Timeline *******/
-    .timeline{
+    .timeline {
         width: 100%
     }
 
-    /***Adds a left margin for the timeline***/
     .timeline-item {
         padding-left: 25px;
         position: relative;
     }
 
-    /*----- TIMELINE MARKER -----*/
     .timeline-marker {
         position: absolute;
         top: -8px;
@@ -228,15 +227,15 @@ hr {
         content: none;
     }
 
-    /*----- TIMELINE CONTENT -----*/
     .timeline-content {
         padding-bottom: 50px;
     }
+
     .timeline-content p:last-child {
         margin-bottom: 0;
     }   
 
-    /****Centered timeline****/
+    /******** Centered timeline ********/
     @media (min-width: 992px) {
         .timeline-centered,
         .timeline-centered .timeline-item,
@@ -286,7 +285,7 @@ hr {
         }
     }
 
-/**************** Skills ****************/
+/********* Skills **********/
 .skills {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -313,7 +312,7 @@ hr {
     color: #C3073F !important;
 }
 
-/********** Project Section **********/
+/********** Project **********/
 .project {
     background-color: #CAEBF2;
     padding-top: 90px;
@@ -355,10 +354,10 @@ hr {
 }
 
 
-/********** contact **********/
+/********** Contact **********/
 #contact {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     background: #ffffff;
 }
 
@@ -374,16 +373,16 @@ hr {
     color: #000;
 }
 
-    /********** social **********/
-    #social-media .fa-github, .fa-linkedin-in, {
-        color: #000 !important;
-    }
+/********** Social **********/
+#social-media .fa-github, .fa-linkedin-in, {
+    color: #000 !important;
+}
 
 .contact a:hover {
     color: #C3073F !important;
 }
 
-/******* Footer *************/
+/******* Footer ********/
 #footer {
     padding-top: 30px;
     padding-bottom: 30px;
