@@ -33,12 +33,6 @@ $('.js-scroll-trigger').click(function() {
 
 //Revealing images and text on scroll/load 
 window.sr = ScrollReveal();
-  
-  //Navbar
-  sr.reveal('.navbar', {
-    duration: 2000,
-    origin: 'bottom'
-  });
 
   //Banner section
   sr.reveal('.banner-greeting', {
@@ -57,6 +51,7 @@ window.sr = ScrollReveal();
     duration: 2000,
     delay: 400,
     origin: 'left',
+    distance: '50px',
     viewFactor: 0.2
   });
 
@@ -64,6 +59,7 @@ window.sr = ScrollReveal();
     duration: 2000,
     delay: 400,
     origin: 'right',
+    distance: '50px',
     viewFactor: 0.2
   });
   
