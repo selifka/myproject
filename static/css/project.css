@@ -6,18 +6,19 @@ body, html {
 }
 
 h1 {
-    font-size: 4.5rem !important;
-    letter-spacing: 10px !important;
+    font-size: 5.5rem !important;
+    letter-spacing: 6px !important;
     font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
 }
 
 h2 {
-    font-size: 2.6rem !important;
+    font-size: 3rem !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
 h3 {
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
     font-family: 'Shadows Into Light', cursive !important;
 }
 
@@ -104,43 +105,77 @@ hr {
 }
 
 /****** Navbar *******/
-.navbar {
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    transform: translateX(250px);
+    background: #1D809F;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 40%;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+    display: block;
+    color: #fff;
+    padding: 5px;
     font-family: 'Montserrat', sans-serif !important;
-    background-color: #111517;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
 }
 
-.navbar-brand {
-    font-family: 'Shadows Into Light', cursive !important;
-    text-transform: none;
-    font-size: 28px !important;
-    color:  #fff !important;
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.navbar-brand:hover {
-    color:  #C3073F !important;
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
 }
 
-.navbar .navbar-nav > li > a {
-    color: #ffffff !important;
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-    color: #C3073F !important;
+.menu-toggle {
+    position: fixed;
+    right: 45px;
+    top: 35px;
+    text-align: center;
+    color: #fff;
+    z-index: 999;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.active {
-    color: #C3073F !important;
+.menu-toggle:focus, .menu-toggle:hover {
+    color: #fff;
 }
 
 /****** Banner *****/
 .banner {
     background-color: #111517;
-    padding-top: 14%;
-    padding-bottom: 14%;
+    padding-top: 13%;
+    padding-bottom: 13%;
 }
 
 .banner hr {
@@ -155,13 +190,13 @@ hr {
 
 .banner-fonts h3 {
     color: #fff !important;
-    font-size: 1.6rem !important;
+    font-size: 1.7rem !important;
 }
 
 /********** About **********/
 .about {
     position: relative;
-    background-color: #CAEBF2;
+    background-color: #C5C3C6;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -179,7 +214,7 @@ hr {
     position: relative;
     padding-top: 90px;
     padding-bottom: 20px;
-    background-color: white;
+    background-color: #F4F4F4;
 }
 
     /****** Timeline *******/
@@ -314,45 +349,43 @@ hr {
 
 /********** Project **********/
 .project {
-    background-color: #CAEBF2;
+    background-color: #4C5C68;
     padding-top: 90px;
     padding-bottom: 80px;
 }
 
 .portfolio-box {
-    position:relative;
-    display:block;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+.portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(195,7,63,.8);
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
 }
 
-.portfolio-box .portfolio-box-caption {
-    position:absolute;
-    bottom:0;
-    display:block;
-    width:100%;
-    height:100%;
-    text-align:center;
-    opacity:0;
-    color:#fff;
-    background:rgba(195,7,63,.9);
-    -webkit-transition:all 
-    .2s;-moz-transition:all 
-    .2s;transition:all .2s
+.portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-    position:absolute;
-    top:50%;
-    width:100%;
-    transform:translateY(-50%);
-    text-align:center
-}
+
 .portfolio-box:hover .portfolio-box-caption {
     opacity:1
 }
-
-.portfolio-box:focus { 
-    outline:0
-}
-
 
 /********** Contact **********/
 #contact {

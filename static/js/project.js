@@ -2,34 +2,41 @@
 Project Javascript for smooth scrolling, auto closing navbar, and animation
 ***/
 
-// Shows the active div your on with scroll
-$('body').scrollspy({
-  target: "#navbarNav", offset: 60
-});   
+// Closes the sidebar menu
+  $(".menu-toggle").click(function(e) {
 
-// Smooth scrolling for js-scroll-trigger class
-$(".js-scroll-trigger[href^='#']").on('click', function(e) {
+    e.preventDefault();
 
-  //prevent the default click behavior 
-  e.preventDefault();
-
-  //store this has for use
-  var hash = this.hash;
-
-  //animate 
-  $('html, body').animate({
-      scrollTop: $(hash).offset().top 
-    }, 800, function(){
-
-      //when done add hash to url
-      window.location.hash = hash;
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+    $(this).toggleClass("active");
   });
-});
 
-// Closes the menu automatically when link is clicked.
-$('.js-scroll-trigger').click(function() {
-  $('.navbar-collapse').collapse('hide');
-});
+  // Smooth scrolling for js-scroll-trigger class
+  $(".js-scroll-trigger[href^='#']").on('click', function(e) {
+
+    //prevent the default click behavior 
+    e.preventDefault();
+
+    //store this has for use
+    var hash = this.hash;
+
+    //animate 
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top 
+      }, 800, function(){
+
+        //when done add hash to url
+        window.location.hash = hash;
+    });
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('#sidebar-wrapper .js-scroll-trigger').click(function() {
+    $("#sidebar-wrapper").removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+  });
 
 //Revealing images and text on scroll/load 
 window.sr = ScrollReveal();

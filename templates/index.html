@@ -13,60 +13,55 @@
     <!-- Bootstrap -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Montserrat:300,400" rel="stylesheet">
 
     <title>Sharayah</title>
 </head>
 
 <body  id="page-top">
 
-  <!-- Header and Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbarNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sharayah</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#aboutme">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#project">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </div>
+  <!-- Navbar -->
+    <a class="menu-toggle" href="#">
+      <i class="fa fa-2x fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#aboutme">About Me</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#project">Projects</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
-  </header>
 
   <!-- Banner -->
-  <div class="banner banner-fonts" id="banner">
-	  <div class="text-center container">
-	  	<div class="banner-greeting">
-	       <h1>
-	         Sharayah Corcoran
-	       </h1>
-	       <hr>
-		   <h3 class="my-4">DevOps and Web Developer
-		   </h3>
-		</div>
-		<div class="banner-btn-js">
-		   <a class="btn custom-btn banner-btn js-scroll-trigger" href="#aboutme">Learn More</a>
-		</div>
-	  </div>
-  </div>
+  <header>
+    <div class="banner banner-fonts" id="banner">
+  	  <div class="text-center container">
+  	  	<div class="banner-greeting">
+  	       <h1 class="my-4">Sharayah Corcoran</h1>
+           <hr>
+  		     <h3 class="py-4">DevOps and Web Developer</h3>
+  		  </div>
+    		<div class="banner-btn-js">
+    		   <a class="btn custom-btn banner-btn js-scroll-trigger" href="#aboutme">Learn More</a>
+    		</div>
+  	  </div>
+    </div>
+  </header>
 
   <!-- About -->
   <div class="about" id="aboutme">
@@ -81,8 +76,8 @@
           <div class="about-content">
     	  <h3>I am passionate about web development and IT automation!
     	  </h3>
-          <p class="my-4">
-              My name is Sharayah Corcoran, I am a recent college graduate with a passion for web development and IT automation! I strive to create and manage highly available and scalable IT infrastructures. When I’m not working on my IT skills, I enjoy spending time with friends, watching Netflix, and being active! Please click the button below to view my full resume!
+        <p class="my-4">
+              My name is Sharayah Corcoran, I am a recent college graduate with a passion for web development and IT automation! I strive to create highly available and scalable IT infrastructures. When I’m not working on my IT skills, I enjoy spending time with friends, watching Netflix, and being active! Please click the button below to view my full resume!
             </p>
             <a href="/static/resume/sharayah-resume.pdf" download class="btn custom-btn resume-btn my-1">Download Resume</a>
           </div>
@@ -183,64 +178,46 @@
 
   <!-- Project -->
   <div class="project" id="project">
-    <div class="container-fluid">
+    <div class="container-fluid text-white">
       <h2 class="text-center">Projects</h2>
       <hr>
       <h3 class="text-center">Click the photos below to checkout my projects on Github!</h3>
-      <div class="row no-gutters my-5 project-js">
+      <div class="row my-5 project-js">
           <div class="col-md-4 col-sm-6">
             <a class="portfolio-box" href="https://github.com/UNH-at-Manchester/wegive">
-              <img class="img-fluid" src="/static/images/giving.jpg" alt="">
+            <img class="img-fluid" src="/static/images/giving.jpg">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                  	<h4>
-                    WeGive
-                	</h4>
+                  <div class="text-faded">
+                  	<h4>WeGive</h4>
                   </div>
-                  <div class="project-name">
-                  	<h3>
-                    Web Development
-                	</h3>
-                  </div>
+                  	<h3>Web Development</h3>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4 col-sm-6">
             <a class="portfolio-box" href="https://github.com/selifka/myproject">
-              <img class="img-fluid" src="/static/images/project.jpg" alt="">
+            <img class="img-fluid" src="/static/images/project.jpg">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                  	<h4>
-                    Resume Project
-                    </h4>
+                  <div class="text-faded">
+                    <h4>Resume Project</h4>
                   </div>
-                  <div class="project-name">
-                  	<h3>
-                    WebDev/DevOps
-                	</h3>
-                  </div>
+                    <h3>WebDev/DevOps</h3>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-4 col-sm-6">
             <a class="portfolio-box" href="https://github.com/selifka/Bakery-Website">
-              <img class="img-fluid" src="/static/images/bakery.jpg" alt="">
+            <img class="img-fluid" src="/static/images/bakery.jpg">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                  	<h4>
-                    Bakery Website
-                	</h4>
+                  <div class="text-faded">
+                    <h4>Bakery Website</h4>
                   </div>
-                  <div class="project-name">
-                  	<h3>
-                    Web Development
-                	</h3>
-                  </div>
+                    <h3>Web Development</h3>
                 </div>
               </div>
             </a>
