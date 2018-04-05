@@ -47,3 +47,52 @@ $( document ).ready(function() {
   });
   
 });
+
+//Revealing images and text on scroll/load 
+window.sr = ScrollReveal();
+
+  //Banner section
+  sr.reveal('.banner-img', {
+    duration: 2000,
+    origin: 'top',
+    distance: '60px'
+  });
+
+  sr.reveal('.banner-greeting', {
+    duration: 2000,
+    scale: 0.7
+  });
+
+  sr.reveal('.banner-btn-js', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '100px'
+  });
+    
+  //Experience section
+  sr.reveal('.t-right', {
+    duration: 1500,
+    origin: 'right',
+    distance: '300px',
+    viewFactor: 0.6
+  });
+
+  sr.reveal('.t-left', {
+    duration: 1500,
+    origin: 'left',
+    distance: '300px',
+    viewFactor: 0.6
+  });
+  
+  //Skills section
+  sr.reveal('.skills-js', {
+    duration: 1300,
+    origin: 'bottom'
+  }, 150);
+
+  //Contact Me section
+  sr.reveal('.social', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '60px'
+  });

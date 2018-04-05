@@ -22,10 +22,10 @@
 
 <body  id="page-top">
 
-  <!-- Navbar <img src="/../static/images/logo.png" width="140" height="140" alt="logo">-->
+  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbarNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/../static/images/share.png"></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/../static/images/banner-logo.png"></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,8 +56,8 @@
     <div class="banner banner-fonts" id="banner">
   	  <div class="text-center container">
   	  	<div class="banner-greeting">
-          <div class="text-center py-5">
-            <img src="/../static/images/banner6.png">
+          <div class="banner-img text-center py-4">
+            <img src="/../static/images/banner.png">
           </div>
   	       <h1 class="type">Sharayah Corcoran</h1>
   		     <h3 class="py-3">DevOps and Web Developer</h3>
@@ -75,13 +75,13 @@
       <h2 class="text-center">About Me</h2>
       <hr>
       <div class="row">
-        <div class="about-image col-md-12 py-5">
+        <div class="col-md-12 py-5">
           <img src="/static/images/me.jpg" class="mx-auto d-block img-fluid rounded-circle">
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 offset-md-2">
-          <div class="about-content">
+          <div>
         	  <h3 class="py-4 text-center">DevOps and Web Developer
         	  </h3>
             <p class="text-center my-3">
@@ -105,7 +105,7 @@
           <div class="col-md-12">
               <div class="main-timeline">
                   <div class="timeline">
-                      <div class="timeline-content">
+                      <div class="timeline-content t-left">
                           <span class="year">2014-Present</span>
                           <span class="post">Remote Helpdesk Technician</span>
                           <h4 class="title">The Computer Guys</h4>
@@ -116,7 +116,7 @@
                   </div>
 
                   <div class="timeline">
-                      <div class="timeline-content">
+                      <div class="timeline-content t-right">
                           <span class="year">2010-2014</span>
                           <span class="post">Information Technology Specialist</span>
                           <h4 class="title">US Army National Guard</h4>
@@ -127,7 +127,7 @@
                   </div>
 
                   <div class="timeline">
-                      <div class="timeline-content">
+                      <div class="timeline-content t-left">
                           <span class="year">2012-2017</span>
                           <span class="post">Computer Information Systems</span>
                           <h4 class="title">University of New Hampshire</h4>
@@ -136,7 +136,7 @@
                   </div>
 
                   <div class="timeline">
-                      <div class="timeline-content">
+                      <div class="timeline-content t-right">
                           <span class="year">Sep 2017</span>
                           <span class="post">AWS Technical Essentials</span>
                           <h4 class="title">AWS - Boston</h4>
@@ -155,28 +155,28 @@
       <h2 class="text-center">Skills</h2>
       <hr>
       <div class="row text-white py-5">
-          <div class="skill-1 col-lg-3 col-md-6 text-center">
+          <div class="skills-js col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <img src="/static/images/ansible.svg">
               <h3>Ansible</h3>
               <p class="text-white">Experience automating server configuration and deployment of AWS instance using Ansible.</p>
             </div>
           </div>
-          <div class="skill-2 col-lg-3 col-md-6 text-center">
+          <div class="skills-js col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-5x fa-aws mb-3"></i>
               <h3>AWS</h3>
               <p class="text-white">Configuration and management of AWS EC2 instances, VPC, Route S5, and much more!</p>
             </div>
           </div>
-          <div class="skill-3 col-lg-3 col-md-6 text-center">
+          <div class="skills-js col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-5x fa-docker mb-3"></i>
               <h3>Docker</h3>
               <p class="text-white">Container orchestration for high scalability and testing.</p>
             </div>
           </div>
-          <div class="skill-4 col-lg-3 col-md-6 text-center">
+          <div class="skills-js col-lg-3 col-md-6 text-center">
             <div class="mt-4 mx-auto">
               <i class="fab fa-5x fa-html5 mb-3"></i>
               <h3>HTML / CSS</h3>
@@ -193,28 +193,76 @@
       <h2 class="text-center">Projects</h2>
       <hr>
       <h3 class="text-center py-5">Click the images below to learn more about the projects I've worked on!</h3>
-      <div class="row my-2 project-js">
+      <div class="row my-2">
           <div class="col-md-4 col-sm-6 mt-4 text-center">
-            <a href="https://github.com/UNH-at-Manchester/wegive">
-            <img class="img-fluid rounded-circle" src="/static/images/giving.png">
-              <h3 class="py-3">WeGive</h3>
-            </a>
-              <p class="text-white">Focused on front-end web development</p>
+            <img class="img-fluid rounded-circle" src="/static/images/wegive.png">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#wegiveModal">Open Modal</button>
+                <h3 class="py-3">WeGive</h3>
+                <p class="text-white">Focused on front-end web development</p>
           </div>
           <div class="col-md-4 col-sm-6 mt-4 text-center">
-            <a href="https://github.com/selifka/myproject">
-            <img class="img-fluid rounded-circle" src="/static/images/project.png">
+            <img class="img-fluid rounded-circle" src="/static/images/resume_web.png">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#resumeModal">Open Modal</button>
               <h3 class="py-3">Resume Project</h3>
-            </a>
               <p class="text-white">Personal project focused on web development</p>
           </div>
           <div class="col-md-4 col-sm-6 mt-4 text-center">
-            <a href="https://github.com/selifka/lamp-infrastructure.git">
-            <img class="img-fluid rounded-circle" src="/static/images/bakery.png">
+            <img class="img-fluid rounded-circle" src="/static/images/devops.png">
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#devopsModal">Open Modal</button>
               <h3 class="py-3">Ansible Automation</h3>
-            </a>
               <p class="text-white">Personal project to automate full AWS infrastructure and configure an Apache server to host Resume Project website</p>
           </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WeGive Modal -->
+  <div id="wegiveModal" class="modal fade text-center" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <h3 class="modal-title">WeGive</h3>
+            <div class="modal-close">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <a type="button" class="btn btn-info btn-sm" href="https://github.com/UNH-at-Manchester/wegive">WeGive Repo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Project Modal -->
+  <div id="resumeModal" class="modal fade text-center" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <h3 class="modal-title">Resume Project</h3>
+            <div class="modal-close">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <a type="button" class="btn btn-info btn-sm" href="https://github.com/selifka/resume_website">Resume Project Repo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DevOps Modal -->
+  <div id="devopsModal" class="modal fade text-center" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <h3 class="modal-title">DevOps Project</h3>
+            <div class="modal-close">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <a type="button" class="btn btn-info btn-sm" href="https://github.com/selifka/aws_webserver_ansible">Ansible Repo</a>
+        </div>
       </div>
     </div>
   </div>
