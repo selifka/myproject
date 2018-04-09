@@ -82,6 +82,18 @@ p {
     background: #FFCF4B;
 }
 
+.modal-btn {
+    color: #fff;
+    border-color: #FFCF4B !important;
+    background: #FFCF4B;
+    font-size: 1rem !important;
+}
+
+.modal-btn:hover {
+    color: #ffffff;
+    background: #FFCF4B;
+}
+
 /*********** Hr ****************/
 hr {
     height: 2px !important;
@@ -101,9 +113,9 @@ hr {
     h2 {font-size:2.5rem !important;}
     h3 {font-size:1.5rem !important;}
     h4 {font-size:1.2rem !important;}
-    p {font-size:1.2rem !important;}
-    .custom-btn {padding: 5px 10px !important;}
-    .contact h4 a {font-size:.7rem !important; font-weight: bold;}
+    p  {font-size:1.2rem !important;}
+    .close {padding-right: 5% !important;} 
+    .modal img {padding: 10px !important;;}
 }
 
 /****** Navbar *******/
@@ -410,13 +422,48 @@ hr {
     padding-bottom: 100px;
 }
 
-.project h3 {
-    color: #000 !important;
+.project p {
+    font-weight: 300 !important;
+    font-size: 1.6rem !important;
 }
 
-.project p {
+.modal p {
     color: #000 !important;
+    font-weight: 300 !important;
 }
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    background-color: rgba(255,255,255, 0.5);
+    color: black;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.close {
+    padding-top: 5% !important; 
+} 
 
 /********** Contact **********/
 #contact {

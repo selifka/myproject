@@ -1,7 +1,6 @@
 /***
 Project Javascript for smooth scrolling, auto closing navbar, and animation
 ***/
-$( document ).ready(function() {
 
   //Hiding navbar until scroll
   $(".navbar").hide();
@@ -46,7 +45,6 @@ $( document ).ready(function() {
     $('.navbar-collapse').collapse('hide');
   });
   
-});
 
 //Revealing images and text on scroll/load 
 window.sr = ScrollReveal();
