@@ -202,7 +202,6 @@ hr {
 .experience-sec {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 90px;
     background-color: #EAEAEA;
 }
 
@@ -210,6 +209,20 @@ hr {
     font-size: 1.1rem !important;
     font-weight: 300 !important;
 }
+
+/********* Education *************/
+.education-sec {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 45px;
+    background-color: #EAEAEA;
+}
+
+.education-sec p {
+    font-size: 1.1rem !important;
+    font-weight: 300 !important;
+}
+
     /*** Start Timeline ***/
     .main-timeline{ position: relative; }
 

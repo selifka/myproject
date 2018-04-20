@@ -1,12 +1,10 @@
 /***
 Project Javascript for smooth scrolling, auto closing navbar, and animation
 ***/
+$(document).ready(function() {
 
   //Hiding navbar until scroll
   $(".navbar").hide();
-
-  $(function () {
-    // body...
     $(window).scroll(function () {
       if ($(this).scrollTop() > 600) {
         $('.navbar').fadeIn();
@@ -14,7 +12,6 @@ Project Javascript for smooth scrolling, auto closing navbar, and animation
         $('.navbar').fadeOut();
       }
     });
-  });
 
   // Shows the active div your on with scroll
   $('body').scrollspy({
@@ -51,17 +48,20 @@ window.sr = ScrollReveal();
 
   //Banner section
   sr.reveal('.banner-img', {
+  	delay: 250,
     duration: 2000,
     origin: 'top',
     distance: '60px'
   });
 
   sr.reveal('.banner-greeting', {
+  	delay: 250,
     duration: 2000,
     scale: 0.7
   });
 
   sr.reveal('.banner-btn-js', {
+  	delay: 250,
     duration: 2000,
     origin: 'bottom',
     distance: '100px'
@@ -94,3 +94,4 @@ window.sr = ScrollReveal();
     origin: 'bottom',
     distance: '60px'
   });
+})
