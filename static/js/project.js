@@ -2,7 +2,9 @@
 Project Javascript for smooth scrolling, auto closing navbar, and animation
 ***/
 $(document).ready(function() {
-
+  
+  document.getElementsByTagName("html")[0].style.visibility = "visible";
+  
   //Hiding navbar until scroll
   $(".navbar").hide();
     $(window).scroll(function () {
@@ -30,7 +32,7 @@ $(document).ready(function() {
     //animate 
     $('html, body').animate({
         scrollTop: $(hash).offset().top 
-      }, 800, function(){
+      }, 700, function(){
 
         //when done add hash to url
         window.location.hash = hash;
@@ -48,20 +50,20 @@ window.sr = ScrollReveal();
 
   //Banner section
   sr.reveal('.banner-img', {
-  	delay: 250,
+  	delay: 150,
     duration: 2000,
     origin: 'top',
     distance: '60px'
   });
 
   sr.reveal('.banner-greeting', {
-  	delay: 250,
+  	delay: 150,
     duration: 2000,
     scale: 0.7
   });
 
   sr.reveal('.banner-btn-js', {
-  	delay: 250,
+  	delay: 150,
     duration: 2000,
     origin: 'bottom',
     distance: '100px'
