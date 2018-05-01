@@ -1,4 +1,4 @@
-[![Personal Resume Project]](http://sharayahcorcoran.com/)
+[Project Live Demo](http://sharayahcorcoran.com/)
 
 Greetings!
 ======
