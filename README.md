@@ -1,7 +1,16 @@
-# Project Details
+[![Personal Resume Project]](http://sharayahcorcoran.com/)
 
-This project is in progress!
+Greetings!
+======
 
-The aim of this project is to help me practice my development skills, as well as familiarize myself with various devops tools. I will add updates to this file as changes are made. Please stayed tuned for further details!
+### This is a simple web development project I created to showcase and practice my web dev skills.
 
+Some of the technologies used for this project include:
+- JQuery
+- HTML/CSS
+- Bootstrap
+- [ScrollReveal](https://github.com/jlmakes/scrollreveal) 
 
+### Changes to the project:
+
+I have moved all automation documentation to a new repository found [here](https://github.com/selifka/aws_webserver_ansible) 
